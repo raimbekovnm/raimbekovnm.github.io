@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow');
+body {
+  font-family: "Oswald", sans-serif;
+}
+.section {
+  height: 150px;
+  background-color: #f5a52a;
+}
+.block {
+  margin-top: 40px;
+}
+.menu ul {
+  background-color: #232323;
+  margin-top: 40px;
+  padding: 30px 10px;
+}
+.menu ul li {
+  display: inline-block;
+  font-family: Sans-Narrow, sans-serif;
+  margin-top: 0;
+  margin-left: 25px;
+}
+.menu ul li a {
+  color: #f5a52a;
+}
+.header {
+  height: 100px;
+  background-color: #fbd59c;
+  text-align: center;
+  margin: 0;
+  
+}
+.header h1 {
+  padding-top: 25px;
+  font-family: "Oswald", sans-serif;
+}
+.box {
+  right: 60px;
+  margin-top: 65px;
+}
+.icon {
+  border: 2px solid grey;
+  height: 70px;
+  padding: 2px 1px;
+  background-color: #e5e5e5;
+}
+.icon fonticon {
+  display: inline-block;
+  background-color: red;
+  padding-right: 20px;
+}
+a {
+  text-align: center;
+}
+.row {
+  margin-top: 10px;
+}
