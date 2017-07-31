@@ -1,0 +1,88 @@
+
+legend {
+  
+  height: 25px;
+  line-height: 25px;
+  width: 150px;
+  background-color: #01b3b3;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 auto;
+  margin-left: 30px;
+  margin-top: -4px;
+  padding-left: 10px;
+}
+.form {
+	height: 370px;
+	width: 320px;
+	border: 2px solid #cfdede;
+	margin-top: 185px;
+	border-radius: none;
+	
+}
+
+.input1 {
+	margin-left: 28px;
+	padding-top: 5px;
+	margin-top: 8px;
+	width: 261px;
+	
+}
+.input2 {
+	margin-left: 28px;
+	padding-top: 5px;
+	margin-top: 8px;
+	width: 261px;
+}
+.first-text input {
+	margin-left: 28px;
+	padding-top: 5px;
+	margin-top: 15px;
+	width: 261px;
+}
+.first-text h4 {
+	font-weight: 900;
+	font-size: 11px;
+	margin-left: 29px;
+	margin-top: 20px;
+
+}.second-text input{
+	margin-left: 28px;
+	padding-top: 5px;
+	margin-top: 6px;
+	width: 261px;
+}
+.second-text h4 {
+	font-weight: 900;
+	font-size: 11px;
+	margin-left: 29px;
+	margin-top: 17px;
+}
+.third-text {
+	margin-top: 10px;
+}
+.third-text input {
+	margin-left: 28px;
+	padding-top: 5px;
+	margin-top: 3px;
+	width: 261px;
+}
+.third-text h4 {
+	font-weight: 900;
+	font-size: 11px;
+	margin-left: 29px;
+	margin-top: 20px;
+}
+.btn {
+  height: 45px;
+  width: 260px;
+  margin-top: 34px;
+  margin-left: 30px;
+  background-color: #01c5c5;
+  font-family: Arial;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
