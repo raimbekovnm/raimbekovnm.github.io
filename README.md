@@ -10,3 +10,12 @@
 [Урок 14](raimbekovnm.github.io/lesson_14/ "Домашка") - Подключение шрифтов
 
 [Урок 15](raimbekovnm.github.io/lesson_15/ "Домашка") - Псевдоэлементы
+
+[Урок 16](raimbekovnm.github.io/lesson_16/ "Домашка") - Слайдер
+
+[Урок 17](raimbekovnm.github.io/lesson_17/ "Домашка") - Всплывающые окна
+
+[Урок 18](raimbekovnm.github.io/lesson_18/ "Домашка") - Табы, аккордеоны
+
+Практика
+
