@@ -19,3 +19,20 @@
 
 Практика
 
+[Часть 1](raimbekovnm.github.io/practice_part_one/ "Практика") - Верстка шапки сайта
+
+[Часть 2](https://raimbekovnm.github.io/practice_part_two/ "Практика") - Оформление первого экрана
+
+[Часть 3](https://raimbekovnm.github.io/practice_part_three/ "Практика") - Эффекты при наведении
+
+[Часть 4](https://raimbekovnm.github.io/practice_part_four/ "Практика") - Слайдер
+
+[Часть 5](https://raimbekovnm.github.io/practice_part_five/ "Практика") - Модальные окна
+
+[Часть 6](https://raimbekovnm.github.io/practice_part_six/ "Практика") - Верстка блока с ценами
+
+[Часть 7](https://raimbekovnm.github.io/practice_part_seven/ "Практика") - Верстка блока с отзывами 
+
+[Часть 8](https://raimbekovnm.github.io/practice_part_eight/ "Практика") - Верстка блока с отзывами
+
+[Часть 9](https://raimbekovnm.github.io/practice_part_nine/ "Практика") - Схема работы и все включено
