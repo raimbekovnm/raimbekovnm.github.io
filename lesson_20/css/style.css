@@ -1,0 +1,14 @@
+ * {
+ 	box-sizing: border-box;
+ }
+ .section {
+ 	background-size: cover;
+ 	min-height: 100vh;
+ }
+ .video {
+ 	display: none;
+ 	position: absolute;
+ 	margin-left: 200px;
+ 	margin-top: 50px;
+ }
+ 
