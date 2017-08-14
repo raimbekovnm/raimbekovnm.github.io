@@ -519,6 +519,9 @@ button, a, input, textarea {
 	}
 }
 .materials {
+	&-text {
+		display: block;
+	}
 	&-link {
 		display: inline-block;
 	}
@@ -655,7 +658,9 @@ button, a, input, textarea {
 			display: none;
 		}
 	}
-	.materials {	}
+	.materials {
+
+	}
 }
 @media (max-width: 767px) {
 	.main {
@@ -672,6 +677,10 @@ button, a, input, textarea {
 		text-align: center;
 	}
 	.feedback {
+		form {
+			margin: 0 6rem;
+		}
+		padding: 3rem;
 		&-slider {
 			width: 100%;
 		}
