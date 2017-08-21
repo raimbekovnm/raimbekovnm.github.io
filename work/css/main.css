@@ -23,6 +23,10 @@ img {
   margin-bottom: 10rem;
   margin-top: 5rem;
 }
+.features p {
+  margin-top: 3rem;
+  font-weight: 900;
+}
 .features h1 {
   text-align: center;
   font-size: 5rem;
@@ -31,11 +35,23 @@ img {
   text-align: center;
 }
 .features-img {
-  padding: 0 4rem;
+  padding: 0 6rem;
   margin-top: 7rem;
   text-align: center;
 }
 .features-img img {
   text-align: center;
-  max-height: 10rem;
+  max-height: 9rem;
+}
+.form-section {
+  margin-top: 10rem;
+}
+.form-section button {
+  padding: 2 4rem;
+  margin-left: 12rem;
+}
+.fa {
+  color: #50B848;
+  font-size: 9rem;
+  padding: 0 6rem;
 }
