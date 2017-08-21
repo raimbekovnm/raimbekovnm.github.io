@@ -1,0 +1,12 @@
+section {
+	min-height: 100vh;
+}
+
+img {
+	background-size: cover;
+	max-width: 100%;
+}
+.section-header {
+	background-color: #51bc5f;
+	padding: 4rem 5rem;
+}
