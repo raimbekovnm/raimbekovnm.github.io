@@ -35,11 +35,11 @@
   <main class="main">
   	<div class="container">
   		<div class="row">
-  			<div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-6 col-xs-5 col-xs-offset-1 logo">
+  			<div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-6 col-xs-12 logo">
   					<img src="img/main/heart.png" alt="Сердечко">
   					<h3>BESTPAPA</h3>
   				</div>
-  			<div class="col-md-3 col-md-offset-6 col-sm-6 col-xs-5 col-xs-offset-1">
+  			<div class="col-md-3 col-md-offset-6 col-sm-6 col-xs-12">
   				<div class="phone-block">
   					<h3>8 800 000 0000</h3>
   					<a class="phone-link" href="#">Заказать звонок</a>
@@ -106,10 +106,10 @@
        <strong>Заказать выписку из роддома</strong>
        <p>Заполните форму и мы организуем выписку из роддома <br> полностью за Вас!</p>
      </div>
-     <form action="#" class="form">
+     <form action="php/smart.php" method="POST" class="form">
        <input class="input-first" type="text" placeholder="Имя">
-       <input class="inpng" type="text" placeholder="Телефон">
-       <button class="form-button">Отправить</button>
+       <input class="inpng" type="tel" placeholder="Телефон">
+       <button type="submit" class="form-button">Отправить</button>
      </form>
   </section>
   
@@ -133,7 +133,7 @@
               <img src="img/features/2.svg" alt="icon">
               <p>Незабываемыe <br>эмоции</p>
             </div>
-            <div class="col-md-3 col-sm-4">
+            <div class="col-md-3 col-sm-4 col-xs-12">
               <img src="img/features/3.svg" alt="icon">
               <p>Вы экономите <br>свое время</p>
             </div>
@@ -170,7 +170,7 @@
           </div>
             <div class="row">
              <div class="price-block">
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-12">
                     <div class="price-blocks">
                     <h3>Название</h3>
                    <h1>9 000 <strong>руб.</strong></h1>
@@ -186,7 +186,7 @@
                    </button>
                   </div>
                 </div>
-                 <div class="col-md-4">
+                 <div class="col-md-4 col-xs-12">
                     <div class="price-blocks">
                     <h3>Название</h3>
                    <h1>15 000 <strong>руб.</strong></h1>
@@ -202,7 +202,7 @@
                    </button>
                  </div>
                </div>
-                 <div class="col-md-4">
+                 <div class="col-md-4 col-xs-12">
                   <div class="price-blocks">
                     <h3>Название</h3>
                    <h1>30 000 <strong>руб.</strong></h1>
@@ -275,133 +275,236 @@
         <h2>Вы запомните этот день на всю жизнь! Доверьтесь нам!</h2>
         <p>Заполни заявку и мы расскажем, как сделать встречу любимой жены <br> и ребенка незабываемой</p>
       </div>
-        <form action="#" class="form">
+        <form action="php/smart.php" method="POST" class="form">
           <input class="input-first" type="text" placeholder="Имя">
           <input class="inpng" type="text" placeholder="Телефон">
-          <button type="button" class="form-button" data-toggle="modal" data-target=".bd-example-modal-lg">Заказать звонок</button>
+          <button type="submit" class="form-button">Заказать звонок</button>
         </form>
       </div>
 
-
         <section class="feedback">
-          <div class="container">
-            <div class="advantages-logo">
-              <img class="line-left" src="img/event/line.png" alt="line">
-              <img src="img/feedback/1434146211_bubble.png" alt="logo">
-              <img class="line-right" src="img/event/line.png" alt="line">
-            </div>
-            <div class="section-header_advantages">
-              <h2>отзывы о нас</h2>
-            </div>
-            <div class="feedback-slider">
-              <div class="feedback-slider_item">
-                <div class="row">
-                <div class="col-md-3 feedback-man">
-                  <img src="img/feedback/feedback-man.jpg" alt="">
+         <div class="container">
+          <div class="advantages-logo">
+           <img class="line-left" src="img/event/line.png" alt="line">
+           <img src="img/feedback/1434146211_bubble.png" alt="logo">
+           <img class="line-right" src="img/event/line.png" alt="line">
+         </div>
+           <div class="section-header_advantages">
+             <h2>отзывы о нас</h2>
+           </div>
+          <div class="feedback-slider">
+             <div class="feedback-slider_item">
+              <div class="col-md-10 col-md-offset-2">
+                <div class="feedback-img">
+                  <img src="img/feedback/feedback-man.jpg" alt="icon">
                 </div>
-                  <div class="col-md-9 col-md-offset-1 feedback-text">
-                    <h2>Игорь иванов</h2>
-                    <p>Первый раз обратился в данную службу два года назад, потому <br>что со вкусом у меня не очень, а жену хотел порадовать. И <br>действительно, моя любимая была самой счастливой. А когда<br>Света, родила мне второго малыша, я уже знал куда обращаться,<br> при выписке из роддома.</p>
-                  </div>
+                <div class="feedback-text">
+                  <p class="feedback-number">1/3</p>
+                  <h2>Игорь Иванов</h2>
+                  <p>Первый раз обратился в данную службу два года назад, потому <br>что со вкусом у меня не очень, а жену хотел порадовать. И <br>действительно, моя любимая была самой счастливой. А когда<br>Света, родила мне второго малыша, я уже знал куда обращаться,<br> при выписке из роддома.</p>
                 </div>
-              </div><div class="feedback-slider_item">
-                <div class="row">
-                <div class="col-md-3 feedback-man">
-                  <img src="img/feedback/feedback-man.jpg" alt="">
+              </div>
+            </div><div class="feedback-slider_item">
+              <div class="col-md-10 col-md-offset-2">
+                <div class="feedback-img">
+                  <img src="img/feedback/feedback-man.jpg" alt="icon">
                 </div>
-                  <div class="col-md-9 col-md-offset-1 feedback-text">
-                    <h2>Игорь иванов</h2>
-                    <p>Первый раз обратился в данную службу два года назад, потому <br>что со вкусом у меня не очень, а жену хотел порадовать. И <br>действительно, моя любимая была самой счастливой. А когда<br>Света, родила мне второго малыша, я уже знал куда обращаться,<br> при выписке из роддома.</p>
-                  </div>
+                <div class="feedback-text">
+                  <p class="feedback-number">2/3</p>
+                  <h2>Игорь Иванов</h2>
+                  <p>Первый раз обратился в данную службу два года назад, потому <br>что со вкусом у меня не очень, а жену хотел порадовать. И <br>действительно, моя любимая была самой счастливой. А когда<br>Света, родила мне второго малыша, я уже знал куда обращаться,<br> при выписке из роддома.</p>
                 </div>
-              </div><div class="feedback-slider_item">
-                <div class="row">
-                <div class="col-md-3 feedback-man">
-                  <img src="img/feedback/feedback-man.jpg" alt="">
+              </div>
+            </div><div class="feedback-slider_item">
+              <div class="col-md-10 col-md-offset-2">
+                <div class="feedback-img">
+                  <img src="img/feedback/feedback-man.jpg" alt="icon">
                 </div>
-                  <div class="col-md-9 col-md-offset-1 feedback-text">
-                    <h2>Игорь иванов</h2>
-                    <p>Первый раз обратился в данную службу два года назад, потому <br>что со вкусом у меня не очень, а жену хотел порадовать. И <br>действительно, моя любимая была самой счастливой. А когда<br>Света, родила мне второго малыша, я уже знал куда обращаться,<br> при выписке из роддома.</p>
-                  </div>
+                <div class="feedback-text">
+                  <p class="feedback-number">3/3</p>
+                  <h2>Игорь Иванов</h2>
+                  <p>Первый раз обратился в данную службу два года назад, потому <br>что со вкусом у меня не очень, а жену хотел порадовать. И <br>действительно, моя любимая была самой счастливой. А когда<br>Света, родила мне второго малыша, я уже знал куда обращаться,<br> при выписке из роддома.</p>
                 </div>
               </div>
             </div>
           </div>
+         </div>
         </section>
-
+    
         <div class="advantages-form">
         <div class="title">
           <h2>Вам не нужно договариваться за оператора, фотографа, кондитера - <br>Мы сделаем это за Вас!</h2>
           <p>Заполни заявку и мы расскажем, как сделать встречу любимой жены <br> и ребенка незабываемой</p>
         </div>
-          <form action="#" class="form">
+          <form action="php/smart.php" method="POST" class="form">
             <input class="input-first" type="text" placeholder="Имя">
-            <input class="inpng" type="text" placeholder="Телефон">
-            <button type="button" class="form-button" data-toggle="modal" data-target=".bd-example-modal-lg">Заказать звонок</button>
+            <input class="inpng" type="tel" placeholder="Телефон">
+            <button type="submit" class="form-button">Заказать звонок</button>
           </form>
         </div>
 
-        <section class="happy">
+        <section class="photos" data-toggle="modal" data-target=".photos-slider">
           <div class="container">
-            <div class="advantages-logo">
-              <img class="line-left" src="img/event/line.png" alt="line">
-              <img src="img/happy/1434146372_18.png" alt="logo">
-              <img class="line-right" src="img/event/line.png" alt="line">
-            </div>
-            <div class="section-header_advantages">
+           <div class="advantages-logo">
+            <img class="line-left" src="img/event/line.png" alt="line">
+            <img src="img/advantages/advantages-logo.png" alt="logo">
+            <img class="line-right" src="img/event/line.png" alt="line">
+          </div>
+            <div class="photos-header">
               <h2>Эти мужчины уже осчастливили своих жен!</h2>
             </div>
-            <div class="photo-album">
-              <div class="row">
-                <div class="col-md-6 first">
-                  <img src="img/happy/1 (1).png" alt="1">
-                </div>
-                <div class="col-md-6 second">
-                  <img src="img/happy/2 (1).png" alt="2">
-                  <div class="col-md-6 third">
-                    <img src="img/happy/3 (1).png" alt="">
+            <div class="row text-center">
+              <div class="col-lg-10 col-lg-offset-1">
+                <div class="photos-gallery">
+                  <div class="row">
+                    <div class="col-xs-6">
+
+                        <div class="photos-section" id="1">
+                          <div class="photos-section-item">
+                            <div class="wrap">
+                              <div class="wrap-sell">
+                                <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                <p>Иван и Наталья</p>
+                                <p class="date">24/05/2015</p>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="img/happy/1.png" ><img src="img/happy/1.png" alt=""></a>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="photos-section">
+                              <div class="photos-section-item">
+                                <div class="wrap">
+                                  <div class="wrap-sell">
+                                    <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                    <p>Иван и Наталья</p>
+                                    <p class="date">24/05/2015</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="img/happy/2.png" ><img src="img/happy/2.png" alt=""></a>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-6">
+
+                            <div class="photos-section">
+                              <div class="photos-section-item">
+                                <div class="wrap">
+                                  <div class="wrap-sell">
+                                    <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                    <p>Иван и Наталья</p>
+                                    <p class="date">24/05/2015</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="img/happy/3.png" ><img src="img/happy/3.png" alt=""></a>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-6">
+
+                            <div class="photos-section">
+                              <div class="photos-section-item">
+                                <div class="wrap">
+                                  <div class="wrap-sell">
+                                    <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                    <p>Иван и Наталья</p>
+                                    <p class="date">24/05/2015</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="img/happy/4.png" ><img src="img/happy/4.png" alt=""></a>
+                            </div>
+
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-6 fourth">
-                    <img src="img/happy/4 (1).png" alt="">
+                  <div class="row">
+                  <div class="col-xs-6">
+
+                      <div class="photos-section">
+                        <div class="photos-section-item">
+                          <div class="wrap">
+                            <div class="wrap-sell">
+                              <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                              <p>Иван и Наталья</p>
+                              <p class="date">24/05/2015</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="img/happy/5.png" ><img src="img/happy/5.png" alt=""></a>
+                      </div>
+
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-6">
+
+                          <div class="photos-section">
+                            <div class="photos-section-item">
+                              <div class="wrap">
+                                <div class="wrap-sell">
+                                  <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                  <p>Иван и Наталья</p>
+                                  <p class="date">24/05/2015</p>
+                                </div>
+                              </div>
+                            </div>
+                            <a href="img/happy/6.png" ><img src="img/happy/6.png" alt=""></a>
+                          </div>
+
+                      </div>
+                      <div class="col-xs-6">
+
+                          <div class="photos-section">
+                            <div class="photos-section-item">
+                              <div class="wrap">
+                                <div class="wrap-sell">
+                                  <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                  <p>Иван и Наталья</p>
+                                  <p class="date">24/05/2015</p>
+                                </div>
+                              </div>
+                            </div>
+                            <a href="img/happy/7.png"><img src="img/happy/7.png" alt=""></a>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-6 fifth">
-                  <img src="img/happy/5 (1).png" alt="">
-                </div>
-                <div class="col-md-3 six">
-                <img src="img/happy/6 (1).png" alt="">
-                </div>
-                <div class="col-md-3 seven">
-                <img src="img/happy/7.png" alt="">
-                </div>
-              </div>
-              
             </div>
           </div>
         </section>
-
         <div class="advantages-form">
         <div class="title">
           <h2>У вас остались вопросы?</h2>
           <p>Заполни заявку и мы расскажем, как сделать встречу любимой жены <br> и ребенка незабываемой</p>
         </div>
-          <form action="#" class="form">
+          <form action="php/smart.php" method="POST" class="form">
             <input class="input-first" type="text" placeholder="Имя">
-            <input class="inpng" type="text" placeholder="Телефон">
-            <button type="button" class="form-button" data-toggle="modal" data-target=".bd-example-modal-lg">Заказать звонок</button>
+            <input class="inpng" type="tel" placeholder="Телефон">
+            <button type="submit" class="form-button">Заказать звонок</button>
           </form>
         </div>
 
         <footer>
           <div class="container">
             <div class="row">
-              <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-6 col-xs-5 col-xs-offset-1 logo">
+              <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-6 col-xs-12 logo">
                   <img src="img/main/heart.png" alt="Сердечко">
                   <h3>BESTPAPA</h3>
                 </div>
-              <div class="col-md-3 col-md-offset-6 col-sm-6 col-xs-5 col-xs-offset-1">
+              <div class="col-md-3 col-md-offset-6 col-sm-6 col-xs-12">
                 <div class="phone-block">
                   <h3>8 800 000 0000</h3>
                   <a class="phone-link" href="#">Заказать звонок</a>
@@ -410,8 +513,6 @@
             </div>
           </div>
         </footer>
-        <!-- Large modal -->
-        <!-- <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Large modal</button> -->
 
        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-sm">
@@ -428,20 +529,45 @@
          </div>
        </div>
 
+       <div class="modal fade photos-slider" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-sm">
+           <div class="modal-content">
+             <div class="fotorama">
+                <img src="img/happy/1.png" alt="иконка">
+                <img src="img/happy/2.png" alt="иконка">
+                <img src="img/happy/3.png" alt="иконка">
+                <img src="img/happy/4.png" alt="иконка">
+                <img src="img/happy/5.png" alt="иконка">
+                <img src="img/happy/6.png" alt="иконка">
+                <img src="img/happy/7.png" alt="иконка">
+              </div>
+           </div>
+         </div>
+       </div>
+
 
         <div class="popup">
           <div class="popup-dialog">
             <div class="popup-content">
               <button class="popup-close">&times;</button>
-              <h4>Заинтересовало?</h4>
+              <h4 class="popup-h4">Заинтересовало?</h4>
               <p>Оставьте свои контактные данные<br>для связи</p>
               <div class="main-form popup-form">
-                <form class="form" action="#">
-                  <input class="input-first" type="text" placeholder="Имя">
-                 <input class="inpng" type="text" placeholder="Телефон">
-                 <button type="button" class="form-button" data-toggle="modal" data-target=".bd-example-modal-lg">Заказать звонок</button>
+                <form class="form popup-form" action="php/smart.php" method="POST">
+                  <input class="input-first" type="text" name="user_name" placeholder="Имя">
+                 <input class="inpng" type="tel" name="user_phone" placeholder="Телефон">
+                 <button type="submit" class="form-button popup-button">Заказать звонок</button>
                 </form>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mail-popup">
+          <div class="mail-popup-dialog">
+            <div class="mail-popup-content">
+              <button class="mail-popup-close">&times;</button>
+              <h4>Спасибо! Ваша заявка отправлена!</h4>
             </div>
           </div>
         </div>
@@ -449,31 +575,34 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/magnific-popup.js"></script>
     <script src="js/fotorama.js"></script>
     <script src="js/slick.min.js"></script>
+
+    </script>
     <script>
-      /*$(document).ready(function() {
-
-        $('.event-slider').magnificPopup({
-          type: 'image',
-          closeOnContentClick: true,
-          closeBtnInside: false,
-          fixedContentPos: true,
-          mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-          image: {
-            verticalFit: true
-          },
-          zoom: {
-            enabled: true,
-            duration: 300 // don't foget to change the duration also in CSS
-          }
+      $('form').submit(function(event) {
+        event.preventDefault();
+        $.ajax({
+          type: "POST",
+          url: "php/smart.php",
+          data: $(this).serialize()
+        }).done(function() {
+          $(this).find("input").val("");
+          $('.mail-popup').fadeIn();
+          $('.mail-popup-close').on('click', function(event) {
+            event.preventDefault();
+            $('.mail-popup').fadeOut();
+            /* Act on the event */
+          });
+          $("form").trigger("reset");
         });
-
-      });*/
+        return true;
+      });
     </script>
     <script>
       $(document).ready(function(){
@@ -489,20 +618,50 @@
       });
       });
 
-    </script>
+    </script>    
+ <script>
+   $(document).ready(function(){
+   $('.button').on('click', function(event) {
+     event.preventDefault();
+     $('.popup').fadeIn();
+     /* Act on the event */
+   });
+   $('.popup-close').on('click', function(event) {
+     event.preventDefault();
+     $('.popup').fadeOut();
+     /* Act on the event */
+   });
+   });
+ 
+ </script> 
+ <script>
+   $(document).ready(function(){
+   $('.price-button').on('click', function(event) {
+     event.preventDefault();
+     $('.popup').fadeIn();
+     /* Act on the event */
+   });
+   $('.popup-close').on('click', function(event) {
+     event.preventDefault();
+     $('.popup').fadeOut();
+     /* Act on the event */
+   });
+   });
+ 
+ </script>
     <script> 
     $('.feedback-slider').slick({
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 0,
-              slidesToScroll: 0,
+              slidesToShow: 1,
+              slidesToScroll: 1,
               infinite: true,
               dots: true
             }
@@ -510,15 +669,16 @@
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 0,
-              slidesToScroll: 0
+              slidesToShow: 1,
+              slidesToScroll: 1
+
             }
           },
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 6,
-              slidesToScroll: 0
+              slidesToShow: 1,
+              slidesToScroll: 1
             }
           }
           // You can unslick at a given breakpoint now by adding:
