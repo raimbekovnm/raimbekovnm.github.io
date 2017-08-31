@@ -77,6 +77,11 @@ html {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.main-content button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+}
 .button {
   padding: 1rem;
   font-family: 'MuseoSans_700';
@@ -87,7 +92,7 @@ html {
 .button:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #000;
+  color: #000;
 }
 .section-header {
   margin-top: 10rem;
@@ -600,6 +605,9 @@ footer {
   border: none;
   outline: none;
   font-size: 3rem;
+}
+.responsive-slider {
+  display: none;
 }
 @media (max-width: 1191px) {
   .logo {

@@ -10,9 +10,6 @@
     <link rel="icon" href="/favicon.ico">
 
     <title>Роддом</title>
-
-
-    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
    
@@ -100,8 +97,8 @@
        <p>Заполните форму и мы организуем выписку из роддома <br> полностью за Вас!</p>
      </div>
      <form action="php/smart.php" method="POST" class="form">
-       <input class="input-first" type="text" placeholder="Имя">
-       <input class="inpng" type="tel" placeholder="Телефон">
+       <input class="input-first" type="text" name="user_name" placeholder="Имя">
+       <input class="inpng" type="tel" name="user_phone" placeholder="Телефон">
        <button type="submit" class="form-button">Отправить</button>
      </form>
   </section>
@@ -267,8 +264,8 @@
         <p>Заполни заявку и мы расскажем, как сделать встречу любимой жены <br> и ребенка незабываемой</p>
       </div>
         <form action="php/smart.php" method="POST" class="form">
-          <input class="input-first" type="text" placeholder="Имя">
-          <input class="inpng" type="text" placeholder="Телефон">
+          <input class="input-first" type="text" name="user_name" placeholder="Имя">
+          <input class="inpng" type="text" name="user_phone" placeholder="Телефон">
           <button type="submit" class="form-button">Заказать звонок</button>
         </form>
       </div>
@@ -328,8 +325,8 @@
           <p>Заполни заявку и мы расскажем, как сделать встречу любимой жены <br> и ребенка незабываемой</p>
         </div>
           <form action="php/smart.php" method="POST" class="form">
-            <input class="input-first" type="text" placeholder="Имя">
-            <input class="inpng" type="tel" placeholder="Телефон">
+            <input class="input-first" type="text" name="user_name" placeholder="Имя">
+            <input class="inpng" type="tel" name="user_phone" placeholder="Телефон">
             <button type="submit" class="form-button">Заказать звонок</button>
           </form>
         </div>
@@ -474,6 +471,138 @@
                 </div>
               </div>
             </div>
+          <div class="responsive-slider">
+              <div class="row text-center">
+              <div class="col-lg-10 col-lg-offset-1">
+                <div class="photos-gallery">
+                  <div class="row">
+                    <div class="col-xs-6">
+            
+                        <div class="photos-section" id="1">
+                          <div class="photos-section-item">
+                            <div class="wrap">
+                              <div class="wrap-sell">
+                                <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                <p>Иван и Наталья</p>
+                                <p class="date">24/05/2015</p>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="img/happy/1.png" ><img src="img/happy/1.png" alt=""></a>
+                        </div>
+            
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="row">
+                        <div class="col-lg-12">
+            
+                            <div class="photos-section">
+                              <div class="photos-section-item">
+                                <div class="wrap">
+                                  <div class="wrap-sell">
+                                    <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                    <p>Иван и Наталья</p>
+                                    <p class="date">24/05/2015</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="img/happy/2.png" ><img src="img/happy/2.png" alt=""></a>
+                            </div>
+            
+                        </div>
+                        <div class="col-xs-6">
+            
+                            <div class="photos-section">
+                              <div class="photos-section-item">
+                                <div class="wrap">
+                                  <div class="wrap-sell">
+                                    <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                    <p>Иван и Наталья</p>
+                                    <p class="date">24/05/2015</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="img/happy/3.png" ><img src="img/happy/3.png" alt=""></a>
+                            </div>
+            
+                        </div>
+                        <div class="col-xs-6">
+            
+                            <div class="photos-section">
+                              <div class="photos-section-item">
+                                <div class="wrap">
+                                  <div class="wrap-sell">
+                                    <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                    <p>Иван и Наталья</p>
+                                    <p class="date">24/05/2015</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="img/happy/4.png" ><img src="img/happy/4.png" alt=""></a>
+                            </div>
+            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-xs-6">
+            
+                      <div class="photos-section">
+                        <div class="photos-section-item">
+                          <div class="wrap">
+                            <div class="wrap-sell">
+                              <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                              <p>Иван и Наталья</p>
+                              <p class="date">24/05/2015</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="img/happy/5.png" ><img src="img/happy/5.png" alt=""></a>
+                      </div>
+            
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-6">
+            
+                          <div class="photos-section">
+                            <div class="photos-section-item">
+                              <div class="wrap">
+                                <div class="wrap-sell">
+                                  <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                  <p>Иван и Наталья</p>
+                                  <p class="date">24/05/2015</p>
+                                </div>
+                              </div>
+                            </div>
+                            <a href="img/happy/6.png" ><img src="img/happy/6.png" alt=""></a>
+                          </div>
+            
+                      </div>
+                      <div class="col-xs-6">
+            
+                          <div class="photos-section">
+                            <div class="photos-section-item">
+                              <div class="wrap">
+                                <div class="wrap-sell">
+                                  <span><img src="img/happy/heart-photo.svg" alt=""></span>
+                                  <p>Иван и Наталья</p>
+                                  <p class="date">24/05/2015</p>
+                                </div>
+                              </div>
+                            </div>
+                            <a href="img/happy/7.png"><img src="img/happy/7.png" alt=""></a>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
         </section>
         <div class="advantages-form">
@@ -482,8 +611,8 @@
           <p>Заполни заявку и мы расскажем, как сделать встречу любимой жены <br> и ребенка незабываемой</p>
         </div>
           <form action="php/smart.php" method="POST" class="form">
-            <input class="input-first" type="text" placeholder="Имя">
-            <input class="inpng" type="tel" placeholder="Телефон">
+            <input class="input-first" type="text" name="user_name" placeholder="Имя">
+            <input class="inpng" type="tel" name="user_phone" placeholder="Телефон">
             <button type="submit" class="form-button">Заказать звонок</button>
           </form>
         </div>
@@ -565,7 +694,7 @@
         </div>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fotorama.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -579,7 +708,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/magnific-popup.js"></script>
     <script src="js/fotorama.js"></script>
     <script src="js/slick.min.js"></script>
     <script>
