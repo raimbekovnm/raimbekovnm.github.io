@@ -474,6 +474,7 @@ footer {
   margin-top: 2rem;
 }
 .popup-form button {
+  margin-top: 2rem;
   margin-right: 2rem;
 }
 .popup-content {
@@ -606,7 +607,7 @@ footer {
   outline: none;
   font-size: 3rem;
 }
-.responsive-slider {
+.responsive-block {
   display: none;
 }
 @media (max-width: 1191px) {
@@ -668,6 +669,15 @@ footer {
   }
 }
 @media (max-width: 767px) {
+  .photos-logo {
+    display: none;
+  }
+  .photos:hover .photos-section-item {
+    display: none;
+  }
+  .photos img {
+    width: 200%;
+  }
   .logo {
     text-align: center;
   }
@@ -713,11 +723,95 @@ footer {
     left: 0rem;
     bottom: 3rem;
   }
-}
-.form-button {
-  margin-top: 2rem;
+  .photos-section {
+    display: block;
+    width: 50%;
+  }
 }
 @media (max-width: 565px) {
+  .photos-logo {
+    display: none;
+  }
+  .first {
+    width: 110%;
+    margin-top: 12px;
+  }
+  .photos {
+    padding-top: 10rem;
+    background-color: #e7f7f9;
+    padding-bottom: 0;
+  }
+  .photos-header {
+    position: relative;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+  .photos-header h2 {
+    font-family: 'MuseoSans_700';
+    font-size: 3rem;
+  }
+  .photos-header:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 65px;
+    height: 20px;
+    -webkit-transform: translateX(-50%) translateY(-4rem);
+            transform: translateX(-50%) translateY(-4rem);
+    background-color: transparent;
+    /* background: url(../img/happy/landscape.png) center no-repeat; */
+  }
+  .photos img {
+    width: 230%;
+    margin-bottom: 1rem;
+  }
+  .photos-gallery {
+    margin-bottom: 5rem;
+  }
+  .photos-section {
+    position: relative;
+  }
+  .photos-section:hover .photos-section-item {
+    display: none;
+  }
+  .photos-section-item {
+    position: absolute;
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .photos-section-item .wrap {
+    display: none;
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  .photos-section-item .wrap-sell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .photos-section-item .wrap-sell p {
+    font-family: 'MuseoSans_700';
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  .photos-section-item .wrap-sell .date {
+    font-family: 'MuseoSans_300';
+    font-size: 1.2rem;
+  }
+  .photos-section-item img {
+    width: 20%;
+    height: 20%;
+  }
   .logo {
     margin-top: 2rem;
     text-align: center;
