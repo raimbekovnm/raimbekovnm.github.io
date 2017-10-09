@@ -153,6 +153,7 @@ body {
   padding-top: 2rem;
   padding-bottom: 15rem;
   background: url(../img/glass/pattern.png) center center no-repeat;
+  background-size: cover;
 }
 .products-text h3 {
   padding-left: 2rem;
@@ -180,6 +181,7 @@ body {
 }
 .types {
   background: url(../img/types/pattern.png) center center no-repeat;
+  background-size: cover;
   padding: 8rem 0;
 }
 .types-box {
@@ -296,6 +298,7 @@ body {
 }
 .second-form {
   background: url(../img/фон.png) center center no-repeat;
+  background-size: cover;
   padding: 7.5rem 0;
   text-align: center;
 }
@@ -346,6 +349,7 @@ body {
 }
 .process {
   background: url(../img/glass/pattern.png) center center no-repeat;
+  background-size: cover;
   padding: 8rem 0;
   text-align: center;
 }
@@ -370,4 +374,83 @@ footer p {
   font-size: 2rem;
   text-align: center;
   color: #fff;
+}
+@media (max-width: 565px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+  .logo {
+    text-align: center;
+  }
+  .glass h2 {
+    font-size: 2.5rem;
+  }
+  .glass-blocks img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+    margin-bottom: 6rem;
+  }
+  .glass-text {
+    text-align: center;
+  }
+  .scheme {
+    padding: 5rem 0;
+  }
+  .scheme-image img {
+    margin-top: 3rem;
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .products {
+    padding: 5rem 0;
+  }
+  .products h3 {
+    font-size: 2.5rem;
+  }
+  .products-image img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .types h2 {
+    font-size: 2.5rem;
+  }
+  .types img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .types-box {
+    padding: 1rem;
+    margin: 0;
+    margin-top: 4rem;
+  }
+  .app h2 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .app img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .app-text {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .app-block {
+    border: 1px solid #000;
+  }
+  .second-form input {
+    margin-top: 3rem;
+  }
+  .second-form button {
+    margin-top: 3rem;
+  }
+  .process h2 {
+    font-size: 2.5rem;
+  }
 }
