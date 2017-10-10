@@ -38,7 +38,7 @@
 			</div>
 			<h1>Перегородки из каленого стекла</h1>
 			<p>от душевых до огромных торговых центров</p>
-			<div class="button">
+			<div class="button mail-button">
 				<button>Заказать</button>
 			</div>
 		</div>
@@ -158,10 +158,10 @@
 		<p>Оставьте заявку и менеджер свяжется с вами</p>
 	</div>
 <div class="form-box">
-	<form action="#">
-		<input class="form-input" type="text" placeholder="Имя">
-		<input class="form-input_second" type="text" placeholder="Телефон">
-		<button class="btn">Отправить</button>
+	<form action="php/smart.php" method="POST">
+		<input class="form-input" name="user_name" type="text" placeholder="Имя">
+		<input class="form-input_second" name="user_phone" type="text" placeholder="Телефон">
+		<button type="submit" class="btn">Отправить</button>
 	</form>
 </div>
 </section>
@@ -229,6 +229,71 @@
 		</div>
 	</div>
 </section>
+<section class="app responsive-app">
+	<div class="container">
+		<div class="section-header">
+			<h2>Где еще применяется стекло?</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-xs-12">
+				<div class="app-image">
+					<img src="img/application/1b858b466e973fc5c75b69f4617cefa9.png" alt="">
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="app-text">
+					<h3>Торговые центры</h3>
+					<p>Особенную популярность стеклянные перегородки обрели в торговых центрах, где они становятся частью витрин</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-md-6 col-xs-12">
+			<div class="app-image">
+				<img src="img/application/ArticleImage.47.png" alt="">
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+				
+				<div class="app-text">
+					<h3>Офисы</h3>
+					<p>Особенную популярность стеклянные перегородки обрели в торговых центрах, где они становятся частью витрин</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="app-block">
+				<div class="col-md-6 col-xs-12">
+					<div class="app-image">
+						<img src="img/application/211144amazingstainlesssteelstairshandrailsgalsstablechairfloorlamppicturewallinteriorhandrailsdesignideas.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="app-text">
+						<h3>Ограждения лестниц</h3>
+						<p>Стекло органично сочетается с металлом, деревом и камнем. Это дает креативное решение для любого интерьера.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="app-block">
+				<div class="col-md-6 col-xs-12">
+					<div class="app-image">
+						<img src="img/application/ograzhdenie-stekla-krashenom-profile.png" alt="">
+					</div>
+				</div>
+					<div class="col-md-6 col-xs-12">
+						
+						<div class="app-text">
+							<h3>Ограждение крыльца дома</h3>
+							<p>Стекло — очень прочный и износостойкий материал, выдерживающий любые погодные условия. Поэтому прослужит такое крыльцо не один десяток лет</p>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <section class="second-form">
 	<div class="container">
@@ -236,16 +301,16 @@
 			<h2>Хочу бесплатную консультацию</h2>
 		</div>
 		<div class="second-form_item">
-			<form action="#">
+			<form action="php/smart.php" method="POST">
 				<div class="row">
 					<div class="col-md-4">
-						<input class="second-form_first" type="text" placeholder="Имя">
+						<input class="second-form_first" type="text" name="user_name" placeholder="Имя">
 					</div>
 					<div class="col-md-4">
-						<input class="second-form_input" type="text" placeholder="Телефон">
+						<input class="second-form_input" type="text" name="user_phone" placeholder="Телефон">
 					</div>
 					<div class="col-md-4">
-						<button class="btn">Отправить</button>
+						<button type="submit" class="btn">Отправить</button>
 					</div>
 				</div>
 			</form>
@@ -297,12 +362,78 @@
 		</div>
 	</div>
 </footer>
+
+<section class="form popup-form">
+	<div class="form-text popup-form_text">
+		<h2>Есть вопросы?</h2>
+		<p>Оставьте заявку <br> и менеджер свяжется с вами</p>
+	</div>
+<div class="form-box popup-form_box">
+<button class="popup-close">&times;</button>
+	<form action="php/smart.php" method="POST">
+		<input class="form-input" name="user_name" type="text" placeholder="Имя">
+		<input class="form-input_second" name="user_phone" type="text" placeholder="Телефон">
+		<button type="submit" class="btn">Отправить</button>
+	</form>
+</div>
+</section>
+
+<div class="mail-popup">
+  <div class="mail-popup-dialog">
+    <div class="mail-popup-content">
+      <button class="mail-popup-close">&times;</button>
+      <h4>Спасибо! Ваша заявка отправлена!</h4>
+    </div>
+  </div>
+</div>
+
+
     <!-- Bootstrap core JavaScript
+
+
+
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+    
+    <script>
+      $('form').submit(function(event) {
+        event.preventDefault();
+        $.ajax({
+          type: "POST",
+          url: "php/smart.php",
+          data: $(this).serialize()
+        }).done(function() {
+          $(this).find("input").val("");
+          $('.mail-popup').fadeIn();
+          $('.mail-popup-close').on('click', function(event) {
+            event.preventDefault();
+            $('.mail-popup').fadeOut();
+            /* Act on the event */
+          });
+          $("form").trigger("reset");
+        });
+        return true;
+      });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('.mail-button').on('click', function(event) {
+        event.preventDefault();
+        $('.popup-form').fadeIn();
+        /* Act on the event */
+      });
+      $('.popup-close').on('click', function(event) {
+        event.preventDefault();
+        $('.popup-form').fadeOut();
+        /* Act on the event */
+      });
+      });
+    
+    </script>
   </body>
 </html>

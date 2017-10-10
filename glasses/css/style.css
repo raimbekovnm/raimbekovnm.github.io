@@ -1,6 +1,5 @@
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* Шрифты */
 @font-face {
@@ -77,13 +76,11 @@ body {
 }
 .button {
   text-align: center;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   margin-bottom: 18rem;
 }
 .button button {
   outline: none;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   background-color: #e6dc1e;
   border: none;
@@ -96,7 +93,6 @@ body {
   font-size: 2rem;
 }
 .button :hover {
-  -webkit-transition: 0.24s;
   transition: 0.24s;
   background-color: #000;
   color: #fff;
@@ -114,8 +110,7 @@ body {
   margin-top: 3rem;
 }
 .glass-blocks img {
-  -webkit-box-shadow: 0px 65px 98px 0px rgba(14, 14, 14, 0.22);
-          box-shadow: 0px 65px 98px 0px rgba(14, 14, 14, 0.22);
+  box-shadow: 0px 65px 98px 0px rgba(14, 14, 14, 0.22);
 }
 .glass-text {
   margin-top: 15rem;
@@ -186,8 +181,7 @@ body {
 }
 .types-box {
   margin-top: 8rem;
-  -webkit-box-shadow: 0px 65px 98px 0px rgba(14, 14, 14, 0.22);
-          box-shadow: 0px 65px 98px 0px rgba(14, 14, 14, 0.22);
+  box-shadow: 0px 65px 98px 0px rgba(14, 14, 14, 0.22);
   background-color: #fff;
   text-align: center;
   padding-top: 1rem;
@@ -249,9 +243,8 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.form button {
+.form .btn {
   outline: none;
-  -webkit-transition: 1s;
   transition: 1s;
   min-width: 30rem;
   padding: 1.2rem;
@@ -273,9 +266,7 @@ body {
 }
 .btn:hover {
   background-color: #1a68ff;
-  -webkit-box-shadow: 0px 0px 146.88px 57.12px rgba(0, 87, 255, 0.19);
-          box-shadow: 0px 0px 146.88px 57.12px rgba(0, 87, 255, 0.19);
-  -webkit-transition: 1s;
+  box-shadow: 0px 0px 146.88px 57.12px rgba(0, 87, 255, 0.19);
   transition: 1s;
   color: #fff;
 }
@@ -316,11 +307,10 @@ body {
 }
 .second-form_item button {
   outline: none;
-  -webkit-transition: 1s;
   transition: 1s;
   min-width: 28rem;
   padding: 1.2rem;
-  background-color: #0057ff;
+  background-color: c;
   border: none;
   font-size: 2rem;
   color: #fff;
@@ -375,7 +365,86 @@ footer p {
   text-align: center;
   color: #fff;
 }
+.popup-form {
+  display: none;
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.popup-close {
+  position: absolute;
+  top: -1rem;
+  right: 3rem;
+  width: 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 5rem;
+}
+.mail-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 0 40rem;
+  padding-top: 25rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mail-popup-dialog {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #0057ff;
+  border: 5px solid #fff;
+}
+.mail-popup-dialog h4 {
+  text-align: center;
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+.mail-popup-close {
+  position: absolute;
+  top: 24rem;
+  right: 41rem;
+  width: 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+}
+.responsive-app {
+  display: none;
+}
 @media (max-width: 565px) {
+  .app {
+    display: none;
+  }
+  .responsive-app {
+    display: block;
+  }
+  .responsive-app h3 {
+    font-size: 2.5rem;
+  }
+  .responsive-app p {
+    font-size: 2rem;
+    font-family: 'Muller_Light', sans-serif;
+  }
   .main h1 {
     font-size: 3rem;
   }
@@ -403,11 +472,17 @@ footer p {
     height: auto;
     display: block;
   }
+  .scheme p {
+    font-size: 2rem;
+  }
   .products {
     padding: 5rem 0;
   }
   .products h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .products p {
+    font-size: 2rem;
   }
   .products-image img {
     max-width: 100% !important;
@@ -440,9 +515,6 @@ footer p {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 5rem;
-  }
-  .app-block {
-    border: 1px solid #000;
   }
   .second-form input {
     margin-top: 3rem;
