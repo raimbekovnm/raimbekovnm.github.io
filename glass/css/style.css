@@ -1,0 +1,545 @@
+body {
+  box-sizing: border-box;
+}
+/* Шрифты */
+@font-face {
+  font-family: 'Rubik_Reg';
+  src: url('../fonts/Rubik-Regular.eot');
+  src: url('../fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Regular.woff2') format('woff2'), url('../fonts/Rubik-Regular.woff') format('woff'), url('../fonts/Rubik-Regular.ttf') format('truetype'), url('../fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik_Bold';
+  src: url('../fonts/Rubik-Bold.eot');
+  src: url('../fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Bold.woff2') format('woff2'), url('../fonts/Rubik-Bold.woff') format('woff'), url('../fonts/Rubik-Bold.ttf') format('truetype'), url('../fonts/Rubik-Bold.svg#Rubik-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik_Light';
+  src: url('../fonts/Rubik-Light.eot');
+  src: url('../fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Light.woff2') format('woff2'), url('../fonts/Rubik-Light.woff') format('woff'), url('../fonts/Rubik-Light.ttf') format('truetype'), url('../fonts/Rubik-Light.svg#Rubik-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muller_Med';
+  src: url('../fonts/MullerMedium.eot');
+  src: url('../fonts/MullerMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/MullerMedium.woff2') format('woff2'), url('../fonts/MullerMedium.woff') format('woff'), url('../fonts/MullerMedium.ttf') format('truetype'), url('../fonts/MullerMedium.svg#MullerMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muller_Bold';
+  src: url('../fonts/MullerBold.eot');
+  src: url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'), url('../fonts/MullerBold.woff2') format('woff2'), url('../fonts/MullerBold.woff') format('woff'), url('../fonts/MullerBold.ttf') format('truetype'), url('../fonts/MullerBold.svg#MullerBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muller_Light';
+  src: url('../fonts/MullerLight.eot');
+  src: url('../fonts/MullerLight.eot?#iefix') format('embedded-opentype'), url('../fonts/MullerLight.woff2') format('woff2'), url('../fonts/MullerLight.woff') format('woff'), url('../fonts/MullerLight.ttf') format('truetype'), url('../fonts/MullerLight.svg#MullerLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muller_Reg';
+  src: url('../fonts/MullerRegular.eot');
+  src: url('../fonts/MullerRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/MullerRegular.woff2') format('woff2'), url('../fonts/MullerRegular.woff') format('woff'), url('../fonts/MullerRegular.ttf') format('truetype'), url('../fonts/MullerRegular.svg#MullerRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Главный экран */
+.main {
+  background: url(../img/main/main-bg.png) center center no-repeat;
+  background-size: cover;
+}
+.main h1 {
+  font-family: 'Rubik_Bold', sans-serif;
+  font-size: 4.5rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 15rem;
+  text-transform: uppercase;
+}
+.main p {
+  font-family: 'Muller_Reg', sans-serif;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 0;
+}
+.logo {
+  margin-top: 4rem;
+}
+.button {
+  text-align: center;
+  transition: 0.4s;
+  margin-bottom: 18rem;
+}
+.button button {
+  outline: none;
+  transition: 0.4s;
+  background-color: #e6dc1e;
+  border: none;
+  min-width: 25rem;
+  min-height: 5rem;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  font-family: 'Rubik_Light', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.button :hover {
+  transition: 0.24s;
+  background-color: #000;
+  color: #fff;
+}
+.scroll {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.glass {
+  background: url(../img/glass/pattern.png) center center no-repeat;
+  background-size: cover;
+  padding-bottom: 10rem;
+}
+.glass-blocks {
+  margin-top: 3rem;
+}
+.glass-blocks img {
+  box-shadow: 0px 65px 98px 0px rgba(14, 14, 14, 0.22);
+}
+.glass-text {
+  margin-top: 15rem;
+}
+.glass-text h3 {
+  font-family: 'Rubik_Reg', sans-serif;
+  font-size: 3.8rem;
+  font-weight: 500;
+}
+.glass-text p {
+  padding: 3rem;
+  padding-top: 1rem;
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.glass-text span {
+  font-family: 'Muller_Med', sans-serif;
+  font-size: 2rem;
+}
+.scheme {
+  background: url(../img/scheme/pattern.png) center center no-repeat;
+  background-size: cover;
+  padding: 12rem 0;
+}
+.scheme-text span {
+  font-family: 'Muller_Bold', sans-serif;
+  font-size: 3rem;
+}
+.scheme-text p {
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2.4rem;
+}
+.products {
+  padding-top: 2rem;
+  padding-bottom: 15rem;
+  background: url(../img/glass/pattern.png) center center no-repeat;
+  background-size: cover;
+}
+.products-text h3 {
+  padding-left: 2rem;
+  font-family: 'Muller_Bold', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.products-text p {
+  padding: 2rem;
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2.2rem;
+}
+.section-header {
+  margin-bottom: 10rem;
+}
+.section-header h2 {
+  font-family: 'Muller_Med', sans-serif;
+  font-size: 3.8rem;
+  text-align: center;
+}
+.section-header p {
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.types {
+  background: url(../img/types/pattern.png) center center no-repeat;
+  background-size: cover;
+  padding: 8rem 0;
+}
+.types-box {
+  margin-top: 8rem;
+  box-shadow: 0px 65px 98px 0px rgba(14, 14, 14, 0.22);
+  background-color: #fff;
+  text-align: center;
+  padding: 0;
+}
+.types-box span {
+  padding-top: 2rem;
+  display: block;
+  font-family: 'Muller_Bold', sans-serif;
+  font-size: 2rem;
+}
+.types-box p {
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.first {
+  margin-right: 3rem;
+}
+.second {
+  margin-left: 3rem;
+}
+.form {
+  padding: 7rem 0;
+  text-align: center;
+  background: url(../img/form.png) center center no-repeat;
+}
+.form-input {
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  font-size: 2rem;
+  color: white;
+  outline: none;
+  border-color: #fff;
+}
+.form-input_second {
+  background-image: url(../img/phone-call.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  font-size: 2rem;
+  color: white;
+  outline: none;
+  border-color: #fff;
+}
+.form-text {
+  color: #fff;
+}
+.form input::-webkit-input-placeholder {
+  color: #fff;
+}
+.form input {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  min-width: 30rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.form .btn {
+  outline: none;
+  transition: 1s;
+  min-width: 30rem;
+  padding: 1.2rem;
+  background-color: #0057ff;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+.form h2 {
+  font-family: 'Muller_Bold', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.form p {
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.btn:hover {
+  background-color: #1a68ff;
+  box-shadow: 0px 0px 146.88px 57.12px rgba(0, 87, 255, 0.19);
+  transition: 1s;
+  color: #fff;
+}
+.app {
+  background: url(../img/application/patterncopy.png) center center no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
+}
+.app-text {
+  margin-left: 8rem;
+  margin-top: 40%;
+}
+.app-text h3 {
+  font-family: 'Muller_Bold', sans-serif;
+  font-size: 3rem;
+}
+.app-text p {
+  font-family: 'Rubik_Light', sans-serif;
+  font-size: 2.4rem;
+}
+.second-form {
+  background: url(../img/фон.png) center center no-repeat;
+  background-size: cover;
+  padding: 7.5rem 0;
+  text-align: center;
+}
+.second-form_item {
+  margin-top: 5rem;
+}
+.second-form_item input::-webkit-input-placeholder {
+  color: #fff;
+}
+.second-form_item input {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+}
+.second-form_item button {
+  outline: none;
+  transition: 1s;
+  min-width: 28rem;
+  padding: 1.2rem;
+  background-color: #0057ff;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+}
+.second-form_first {
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  font-size: 2rem;
+  color: white;
+  outline: none;
+  border-color: #fff;
+}
+.second-form_input {
+  background-image: url(../img/phone-call.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  font-size: 2rem;
+  color: white;
+  outline: none;
+  border-color: #fff;
+}
+.section-header_form {
+  color: #fff;
+  text-align: center;
+}
+.process {
+  background: url(../img/glass/pattern.png) center center no-repeat;
+  background-size: cover;
+  padding: 8rem 0;
+  text-align: center;
+}
+.process-block {
+  text-align: center;
+}
+.process p {
+  font-family: 'Muller_Reg', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+footer {
+  padding: 5rem 0;
+  background-color: #000;
+}
+footer h3 {
+  font-family: 'Muller_Bold', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+footer p {
+  font-family: 'Rubik_Light', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.popup-form {
+  display: none;
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.popup-close {
+  position: absolute;
+  top: -1rem;
+  right: 3rem;
+  width: 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 5rem;
+}
+.mail-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 0 40rem;
+  padding-top: 25rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mail-popup-dialog {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #0057ff;
+  border: 5px solid #fff;
+}
+.mail-popup-dialog h4 {
+  text-align: center;
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+.mail-popup-close {
+  position: absolute;
+  top: 24rem;
+  right: 41rem;
+  width: 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+}
+.responsive-app {
+  display: none;
+}
+@media (max-width: 565px) {
+  .app {
+    display: none;
+  }
+  .responsive-app {
+    display: block;
+  }
+  .responsive-app h3 {
+    font-size: 2.5rem;
+  }
+  .responsive-app p {
+    font-size: 2rem;
+    font-family: 'Muller_Light', sans-serif;
+  }
+  .main h1 {
+    font-size: 3rem;
+  }
+  .logo {
+    text-align: center;
+  }
+  .glass h2 {
+    font-size: 2.5rem;
+  }
+  .glass p {
+    text-align: left;
+  }
+  .glass-blocks img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+    margin-bottom: 6rem;
+  }
+  .glass-text {
+    text-align: center;
+  }
+  .scheme {
+    padding: 5rem 0;
+  }
+  .scheme-image img {
+    margin-top: 3rem;
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .scheme p {
+    font-size: 2rem;
+  }
+  .products {
+    padding: 5rem 0;
+  }
+  .products h3 {
+    font-size: 2rem;
+  }
+  .products p {
+    font-size: 2rem;
+  }
+  .products-image img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .types h2 {
+    font-size: 2.5rem;
+  }
+  .types img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .types-box {
+    padding: 0;
+    margin: 0;
+    margin-top: 4rem;
+  }
+  .app h2 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .app img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .app-text {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .second-form input {
+    margin-top: 3rem;
+  }
+  .second-form button {
+    margin-top: 3rem;
+  }
+  .process h2 {
+    font-size: 2.5rem;
+  }
+  .mail-popup {
+    padding: 0;
+    padding-top: 27rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .mail-popup-close {
+    right: 3rem;
+    top: 24rem;
+  }
+}
