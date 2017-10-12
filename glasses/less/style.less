@@ -247,7 +247,7 @@ background-size: cover;
 		box-shadow: 0px 65px 98px 0px rgba(14, 14, 14, 0.22);
 		background-color: #fff;
 		text-align: center;
-		padding-top: 1rem;
+		padding: 0;
 		span {
 			padding-top: 2rem;
 			display: block;
@@ -368,7 +368,7 @@ background-size: cover;
 			transition: 1s;
 			min-width: 28rem;
 			padding: 1.2rem;
-			background-color: c;
+			background-color: #0057ff;
 			border: none;
 			font-size: 2rem;
 			color: #fff;
@@ -402,10 +402,14 @@ background-size: cover;
 	background-size: cover;
 	padding: 8rem 0;
 	text-align: center;
+	&-block {
+		text-align: center;
+	}
 	p {
 		.reg();
 		font-size: 2rem;
-		margin-left: 5rem;
+		text-align: center;
+		margin-top: 3rem;
 	}
 }
 footer {
@@ -453,8 +457,7 @@ footer {
 }
 
 .mail-popup {
-    display: none;
-    position: fixed;
+display: none;    position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -520,6 +523,9 @@ footer {
 	h2 {
 		font-size: 2.5rem;
 	}
+	p {
+		text-align: left;
+	}
 }
 .glass-blocks {
 	img {
@@ -572,7 +578,7 @@ footer {
 		  display:block;
 	}
 	&-box {
-		padding: 1rem;
+		padding: 0;
 		margin: 0;
 		margin-top: 4rem;
 	}
@@ -608,5 +614,15 @@ footer {
 }
 footer {
 	
+}
+.mail-popup {
+	padding: 0;
+	padding-top: 27rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	&-close {
+		right: 3rem;
+		top: 24rem;
+	}
 }
 }
