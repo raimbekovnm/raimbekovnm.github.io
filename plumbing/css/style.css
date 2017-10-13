@@ -155,3 +155,129 @@
 .form h2 {
   margin-bottom: 4rem;
 }
+.input {
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.input_second {
+  background-image: url(../img/phone-call.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.skills {
+  background-color: #eafcfe;
+  padding: 10rem 0;
+  text-align: center;
+}
+.skills h2 {
+  margin-bottom: 5rem;
+}
+.skills p {
+  color: #393c5b;
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2.3rem;
+  margin-top: 2rem;
+}
+.skills span {
+  font-family: 'Muller_Bold', sans-serif;
+  font-size: 2.3rem;
+}
+.skills img {
+  margin-top: 5rem;
+}
+.process {
+  padding: 10rem 0;
+  background: url(../img/bg.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.process h4 {
+  margin-top: 4rem;
+  color: #e84c20;
+  font-family: 'Muller_Bold', sans-serif;
+  font-size: 4.7rem;
+}
+.process h3 {
+  font-size: 2.7rem;
+  font-family: 'Muller_Bold', sans-serif;
+  color: #e84c20;
+}
+.process p {
+  color: #393c5b;
+  font-size: 2.5rem;
+  font-family: 'Muller_Light', sans-serif;
+}
+.process button {
+  font-family: 'Muller_Light', sans-serif;
+  background-color: #eb4f24;
+  padding: 1rem 2rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+footer {
+  background-color: #e7e7e7;
+  text-align: center;
+}
+footer button {
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+  font-family: 'Muller_Light', sans-serif;
+  background-color: #eb4f24;
+  padding: 1rem 2rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+footer img {
+  display: inline-block;
+}
+footer p {
+  margin-top: 1rem;
+  display: inline-block;
+  font-family: 'Muller_Bold', sans-serif;
+  font-size: 1.7rem;
+}
+footer a {
+  font-size: 2rem;
+}
+.block {
+  display: block;
+  margin-top: 3rem;
+}
+.logo {
+  margin-top: 4rem;
+}
+.footer-menu {
+  margin-top: 2rem;
+}
+.footer-menu li {
+  margin-left: 3rem;
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  list-style-type: none;
+}
+.footer-menu a {
+  outline: none;
+  text-decoration: none;
+  color: #070707;
+}
+@media (max-width: 565px) {
+  .skills img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .skills p {
+    font-size: 1.8rem;
+  }
+  .skills span {
+    font-size: 1.7rem;
+  }
+}
