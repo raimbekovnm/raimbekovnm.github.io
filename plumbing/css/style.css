@@ -75,6 +75,8 @@
   font-size: 2.1rem;
 }
 .link button {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-family: 'Muller_Light', sans-serif;
   background-color: #eb4f24;
   padding: 1rem 2rem;
@@ -97,6 +99,8 @@
   text-transform: uppercase;
 }
 .main-header button {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-family: 'Muller_Light', sans-serif;
   background-color: #eb4f24;
   padding: 1rem 2rem;
@@ -136,6 +140,8 @@
 }
 .form button {
   font-family: 'Muller_Light', sans-serif;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: #eb4f24;
   padding: 1rem 2rem;
   color: #fff;
@@ -165,25 +171,30 @@
   background-repeat: no-repeat;
   background-position: 20px;
 }
-.skills {
+.skills,
+.response {
   background-color: #eafcfe;
   padding: 10rem 0;
   text-align: center;
 }
-.skills h2 {
+.skills h2,
+.response h2 {
   margin-bottom: 5rem;
 }
-.skills p {
+.skills p,
+.response p {
   color: #393c5b;
   font-family: 'Muller_Light', sans-serif;
   font-size: 2.3rem;
   margin-top: 2rem;
 }
-.skills span {
+.skills span,
+.response span {
   font-family: 'Muller_Bold', sans-serif;
   font-size: 2.3rem;
 }
-.skills img {
+.skills img,
+.response img {
   margin-top: 5rem;
 }
 .process {
@@ -217,6 +228,8 @@
   outline: none;
   cursor: pointer;
   font-size: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 footer {
   background-color: #e7e7e7;
@@ -233,6 +246,8 @@ footer button {
   outline: none;
   cursor: pointer;
   font-size: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 footer img {
   display: inline-block;
@@ -245,6 +260,11 @@ footer p {
 }
 footer a {
   font-size: 2rem;
+}
+button:hover {
+  background-color: green;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .block {
   display: block;
@@ -268,16 +288,172 @@ footer a {
   text-decoration: none;
   color: #070707;
 }
+.mail-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 0 40rem;
+  padding-top: 25rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mail-popup-dialog {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #eb4f24;
+  border: 5px solid #fff;
+}
+.mail-popup-dialog h4 {
+  text-align: center;
+  font-family: 'Muller_Light', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+.mail-popup-close {
+  position: absolute;
+  top: 24rem;
+  right: 41rem;
+  width: 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+}
+.response {
+  display: none;
+}
+.mail-form {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding-top: 15rem;
+  text-align: center;
+}
+.mail-form input {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  font-size: 1.9rem;
+  border: none;
+  margin-bottom: 2rem;
+  color: #393c5b;
+  text-align: center;
+}
+.mail-form h2 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.input {
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.input_second {
+  background-image: url(../img/phone-call.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.mail-btn {
+  font-family: 'Muller_Light', sans-serif;
+  background-color: #eb4f24;
+  padding: 1rem 1.7rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.popup-close {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  width: 9rem;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 5rem;
+}
 @media (max-width: 565px) {
-  .skills img {
+  .skills {
+    display: none;
+  }
+  .response {
+    display: block;
+  }
+  .response img {
     max-width: 100% !important;
     height: auto;
     display: block;
   }
-  .skills p {
+  .response p {
     font-size: 1.8rem;
   }
-  .skills span {
+  .response span {
     font-size: 1.7rem;
+  }
+  .menu {
+    margin-right: 10rem;
+  }
+  .link {
+    margin-top: 2rem;
+  }
+  .link button {
+    margin-bottom: 3rem;
+  }
+  .header {
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .header button {
+    margin-top: 5rem;
+  }
+  .features p {
+    font-size: 2rem;
+  }
+  .form input {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .form button {
+    padding: 1rem 1.7rem;
+  }
+  .process h4 {
+    font-size: 3.5rem;
+  }
+  .process h3 {
+    font-size: 2.5rem;
+  }
+  .process p {
+    font-size: 2rem;
+  }
+  .footer-menu {
+    margin-right: 7rem;
+  }
+  footer button {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+  footer p {
+    margin-top: 1rem;
   }
 }

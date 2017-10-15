@@ -105,6 +105,7 @@
 		font-size: 2.1rem;
 	}
 	button {
+		transition: 0.5s;
 		.light();
 		background-color: #eb4f24;
 		padding: 1rem 2rem;
@@ -127,6 +128,7 @@
 		text-transform: uppercase;
 	}
 	button {
+		transition: 0.5s;
 		.light();
 		background-color: #eb4f24;
 		padding: 1rem 2rem;
@@ -160,12 +162,13 @@
 		margin-top: 3rem;		
 	}
 }
-.form {
+.form{
 	padding: 5rem 0;
 	background-color: #f6d403;
 	text-align: center;
 	button {
 		.light();
+		transition: 0.5s;
 				background-color: #eb4f24;
 				padding: 1rem 2rem;
 				color: #fff;
@@ -196,7 +199,7 @@
 		background-position: 20px;
 	}
 }
-.skills {
+.skills, .response {
 	background-color:  #eafcfe;
 	padding: 10rem 0;
 	text-align: center;
@@ -248,6 +251,7 @@
 				outline: none;
 				cursor: pointer;
 				font-size: 2rem;
+				transition: 0.5s;
 	}
 }
 footer {
@@ -256,6 +260,7 @@ footer {
 	button {
 		margin-top: 4rem;
 		border-radius: 0.5rem;
+		transition: 0.5s;
 		.light();
 				background-color: #eb4f24;
 				padding: 1rem 2rem;
@@ -264,6 +269,8 @@ footer {
 				outline: none;
 				cursor: pointer;
 				font-size: 2rem;
+				transition: 0.5s;
+				
 	}
 	img {
 		display: inline-block;
@@ -278,6 +285,10 @@ footer {
 		font-size: 2rem;
 	}
 }
+button:hover {
+					background-color: green;
+					transition: 0.5s;
+				}
 .block {
 	display: block;
 	margin-top: 3rem;
@@ -300,8 +311,120 @@ footer {
 		color: #070707;
 	}
 }
+
+
+.mail-popup {
+display: none;    position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	padding: 0 40rem;
+	padding-top: 25rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mail-popup-dialog {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #eb4f24;
+  border: 5px solid #fff;
+}
+.mail-popup-dialog h4 {
+  text-align: center;
+  .light();
+
+  font-size: 2rem;
+  color: #fff;
+}
+.mail-popup-close {
+  position: absolute;
+  top: 24rem;
+  right: 41rem;
+  width: 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+}
+
+.response {
+	display: none;
+}
+.mail-form {
+	position: fixed;
+	background-image: none;
+	background-color:  rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	padding-top: 15rem;
+		text-align: center;
+
+		input {
+			display: block;
+			margin: 0 auto;
+			padding: 1rem 1rem;
+			font-size: 1.9rem;
+			border: none;
+			margin-bottom: 2rem;
+			color:  #393c5b;
+			text-align: center;
+		}
+		h2 {
+			color: #fff;
+			margin-bottom: 2rem;
+			font-size: 2.5rem;
+		}
+	}
+	.input {
+		background-image: url(../img/user.svg);
+		background-repeat: no-repeat;
+		background-position: 20px;
+		&_second {
+			background-image: url(../img/phone-call.svg);
+			background-repeat: no-repeat;
+			background-position: 20px;
+		}
+}  
+.mail-btn {
+
+			.light();
+					background-color: #eb4f24;
+					padding: 1rem 1.7rem;
+					color: #fff;
+					border: none;
+					outline: none;
+					cursor: pointer;
+					font-size: 2rem;
+		}
+.popup-close {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  width: 9rem;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 5rem;
+}
 @media (max-width: 565px) {
 	.skills {
+		display: none;
+	}
+	.response {
+		display: block;
 		img {
 			max-width:100% !important;
 			  height:auto;
@@ -314,4 +437,61 @@ footer {
 			font-size: 1.7rem;
 		}
 	}
+	.menu {
+		margin-right: 10rem;
+	}
+	.link {
+		margin-top: 2rem;
+		button {
+			margin-bottom: 3rem;
+		}
+	}
+	.header {
+		text-align: center;
+		h1 {
+			font-size: 3.5rem;
+			text-align: center;
+		}
+		button {
+			margin-top: 5rem;
+		}
+	}
+	.features {
+		p {
+			font-size: 2rem;
+		}
+	}
+	.form {
+		input {
+			margin: 0 auto;
+			margin-bottom: 2rem;
+		}
+		button {
+			padding: 1rem 1.7rem;
+		}
+	}
+	.process {
+		h4 {
+			font-size: 3.5rem;
+		}
+		h3 {
+			font-size: 2.5rem;
+		}
+		p {
+			font-size: 2rem;
+		}
+	}
+	.footer-menu {
+		margin-right: 7rem;
+	}
+	footer {
+		button {
+			margin-bottom: 3rem;
+			margin-top: 1rem;
+		}
+		p {
+			margin-top: 1rem;
+		}
+	}
+	
 }

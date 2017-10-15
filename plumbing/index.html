@@ -49,7 +49,7 @@
 				</div>
 				<div class="col-md-3 link">
 					<p>0555 55 55 55</p>
-					<button>Вызвать мастера</button>
+					<button class="mail-button">Вызвать мастера</button>
 				</div>
 			</div>
 		</div>
@@ -59,7 +59,7 @@
     		<div class="container">
     			<div class="header">
     				<h1>Услуги сантехника <br>в бишкеке</h1>
-    				<button>Вызвать мастера</button>
+    				<button class="mail-button">Вызвать мастера</button>
     			</div>
     			<div class="scroll">
     				<img src="img/main/mouse.png" alt="">
@@ -74,19 +74,19 @@
     		<div class="section-header">
     			<h2>Кто мы?</h2>
     		</div>
-    		<div class="col-md-3 icons">
+    		<div class="col-md-3 col-xs-6 icons">
     				<img src="img/features/Cog.png" alt="">
     				<p>Более 20 видов услуг</p>
     			</div>
-    			<div class="col-md-3 icons">
+    			<div class="col-md-3 col-xs-6 icons">
     				<img src="img/features/Thumb-up.png" alt="">
     				<p>Гарантия на услуги 1 год</p>
     			</div>
-    			<div class="col-md-3 icons">
+    			<div class="col-md-3 col-xs-6 icons">
     				<img src="img/features/Clock.png" alt="">
     				<p>Вызов мастера круглосуточно</p>
     			</div>
-    			<div class="col-md-3 icons">
+    			<div class="col-md-3 col-xs-6 icons">
     				<img src="img/features/Wallet.png" alt="">
     				<p>Очень приятные цены</p>
     			</div>	
@@ -97,10 +97,10 @@
     	<div class="section-header">
     		<h2>Хочу консультацию</h2>
     	</div>
-    	<form action="#">
+    	<form action="php/smart.php">
     		<input class="input" type="name" placeholder="Имя">
     		<input class="input_second" type="phone" placeholder="Телефон">
-    		<button>Получить консультацию</button>
+    		<button type="submit">Получить консультацию</button>
     	</form>
     </div>
 
@@ -168,6 +168,80 @@
     	</div>
     </section>
 
+    <section class="response" id="skills">
+    	<div class="container">
+    		<div class="section-header">
+    			<h2>Что мы умеем?</h2>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/1.png" alt="">
+    				<p>Устранение<br><span>течи</span></p>
+    			</div>
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/2.png" alt="">
+    				<p>Установка <br><span>бойлера</span></p>
+    			</div>
+    			
+    		</div>
+    		<div class="row">
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/3.png" alt="">
+    				<p>Установка <br><span>стиральной машинки</span></p>
+    			</div>
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/4.png" alt="">
+    				<p>Монтаж<br><span>канализации</span></p>
+    			</div>
+    		</div>
+    		
+    		<div class="row">
+    			
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/5.png" alt="">
+    				<p>Установка <br><span>полотенцесушителя</span></p>
+    			</div>
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/6.png" alt="">
+    				<p>Установка и замена<br><span>радиаторов</span></p>
+    			</div>
+    		</div>	
+    		<div class="row">
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/7.png" alt="">
+    				<p>Установка и ремонт<br><span>сифона</span></p>
+    			</div>
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/8.png" alt="">
+    				<p>Установка ремонт<br><span>смесителя</span></p>
+    			</div>
+    			
+    		</div>	
+    		<div class="row">
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/9.png" alt="">
+    				<p>Установка<br><span>кухонной мойки</span></p>
+    			</div>
+    			<div class="col-md-4 col-xs-6">
+    			<img src="img/skills/10.png" alt="">
+    			<p>Установка и ремонт<br><span>раковины</span></p>
+    		</div>
+    		</div>
+    		
+    		<div class="row">
+    			
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/11.png" alt="">
+    				<p>Установка <br><span>душевых кабин</span></p>
+    			</div>
+    			<div class="col-md-4 col-xs-6">
+    				<img src="img/skills/12.png" alt="">
+    				<p>Установка и замена<br><span>унитаза</span></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
     <section class="process">
     	<div class="container">
     		<div class="section-header">
@@ -204,7 +278,7 @@
     						<li><a href="#skills">Услуги</a></li>
     						<li><a href="#form">Хочу консультацию</a></li>
     						<li><a href="#">Цены</a></li>
-    						<li><a href="#">Контакты</a></li>
+    						<li><a href="#footer">Контакты</a></li>
     					</ul>
     				</div>
     			</div>
@@ -222,6 +296,35 @@
     		</div>
     	</div>
     </footer>
+
+
+	<div class="popup-content">
+
+		<div class="popup-form">
+
+			<div class="mail-form">
+			<button class="popup-close">&times;</button>
+				<div class="section-header">
+					<h2>Остаьвте свои контактные <br>данные и менеджер <br> свяжется с вами</h2>
+				</div>
+				<form action="php/smart.php">
+					<input class="input" type="name" placeholder="Имя">
+					<input class="input_second" type="phone" placeholder="Телефон">
+					<button type="submit" class="mail-btn">Получить консультацию</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="mail-popup">
+      <div class="mail-popup-dialog">
+        <div class="mail-popup-content">
+          <button class="mail-popup-close">&times;</button>
+          <h4>Спасибо! Ваша заявка отправлена!</h4>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -229,7 +332,41 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-
+	<script>
+	  $('form').submit(function(event) {
+	    event.preventDefault();
+	    $.ajax({
+	      type: "POST",
+	      url: "php/smart.php",
+	      data: $(this).serialize()
+	    }).done(function() {
+	      $(this).find("input").val("");
+	      $('.mail-popup').fadeIn();
+	      $('.mail-popup-close').on('click', function(event) {
+	        event.preventDefault();
+	        $('.mail-popup').fadeOut();
+	        /* Act on the event */
+	      });
+	      $("form").trigger("reset");
+	    });
+	    return true;
+	  });
+	</script>
+	<script>
+	  $(document).ready(function(){
+	  $('.mail-button').on('click', function(event) {
+	    event.preventDefault();
+	    $('.popup-form').fadeIn();
+	    /* Act on the event */
+	  });
+	  $('.popup-close').on('click', function(event) {
+	    event.preventDefault();
+	    $('.popup-form').fadeOut();
+	    /* Act on the event */
+	  });
+	  });
+	
+	</script>
     <script>
     	$(document).ready(function(){
     	    $("#menu").on("click","a", function (event) {
