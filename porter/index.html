@@ -60,9 +60,9 @@
         </div>
         <img src="img/12_H100.png" alt="">
         <div class="main-bg_form">
-          <form action="#">
-            <input type="name" placeholder="Телефон">
-            <button>Oтправить заявку</button>
+          <form action="php/smart.php" method="POST">
+            <input type="tel" name="user_phone" placeholder="Телефон">
+            <button type="submit">Oтправить заявку</button>
           </form>
         </div>
       </div>
@@ -121,7 +121,7 @@
           <img src="img/s1.png" alt="">
           <span>Тариф Эконом</span>
           <p>от 500 - coм/час <br><br> по г.Бишкек <br> до 2-тонн</p>
-          <button>Заказать</button>
+          <button class="popup-btn">Заказать</button>
         </div>
       </div>
       <div class="col-md-4">
@@ -129,7 +129,7 @@
           <img src="img/s2.png" alt="">
           <span>Услуги грузчиков</span>
           <p>от 250 сом/час</p>
-          <button class="second">Заказать</button>
+          <button class="second popup-btn">Заказать</button>
         </div>
       </div>
       <div class="col-md-4">
@@ -137,7 +137,7 @@
           <img src="img/s3.png" alt="">
           <span>Сборка <br> и разборка мебели</span>
           <p>от 250 сом/час</p>
-          <button class="third">Заказать</button>
+          <button class="third popup-btn">Заказать</button>
         </div>
       </div>
     </div>
@@ -160,16 +160,79 @@
       </div>
       <div class="col-md-3">
         
-          <button>
+          <button class="popup-btn">
             Заказать
           </button>
       
       </div>
     </div>
   </footer>
+
+  <div class="popup-content">
+
+    <div class="popup-form">
+
+      <div class="mail-form">
+      <button class="popup-close">&times;</button>
+        <div class="section-header">
+          <h2>Остаьвте свои контактные <br>данные и менеджер <br> свяжется с вами</h2>
+        </div>
+        <form action="php/smart.php" method="POST">
+          <input class="input_second" name="user_phone" type="phone" placeholder="Телефон">
+          <button type="submit" class="mail-btn">Заказать</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="mail-popup">
+      <div class="mail-popup-dialog">
+        <div class="mail-popup-content">
+          <button class="mail-popup-close">&times;</button>
+          <h4>Спасибо! Ваша заявка отправлена!</h4>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+    $('form').submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "php/smart.php",
+        data: $(this).serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        $('.mail-popup').fadeIn();
+        $('.mail-popup-close').on('click', function(event) {
+          event.preventDefault();
+          $('.mail-popup').fadeOut();
+          /* Act on the event */
+        });
+        $("form").trigger("reset");
+      });
+      return true;
+    });
+  </script>
+
+  <script>
+    $(document).ready(function(){
+    $('.popup-btn').on('click', function(event) {
+      event.preventDefault();
+      $('.popup-form').fadeIn();
+      /* Act on the event */
+    });
+    $('.popup-close').on('click', function(event) {
+      event.preventDefault();
+      $('.popup-form').fadeOut();
+      /* Act on the event */
+    });
+    });
+  
+  </script>
   </body>
 </html>

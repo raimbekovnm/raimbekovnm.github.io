@@ -222,6 +222,99 @@ footer button:hover {
   -webkit-transition: 1s;
   transition: 1s;
 }
+.popup-form {
+  display: none;
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  position: fixed;
+  padding-top: 10rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.popup-form h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.popup-form input {
+  margin-right: 2rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 0;
+  outline: none;
+  text-align: center;
+  font-family: 'Muller_light', sans-serif;
+  font-size: 1.7rem;
+}
+.mail-btn {
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+  font-family: 'Muller_light', sans-serif;
+  font-size: 1.7rem;
+  background-color: #fe6192;
+  color: #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.popup-close {
+  position: absolute;
+  top: -1rem;
+  right: 3rem;
+  width: 3rem;
+  background-color: transparent;
+  background-color: none;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 5rem;
+}
+.mail-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 0 40rem;
+  padding-top: 25rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mail-popup-dialog {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fe6192;
+  border: 5px solid #fff;
+}
+.mail-popup-dialog h4 {
+  text-align: center;
+  font-family: 'Muller_light', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+.mail-popup-close {
+  position: absolute;
+  top: 24rem;
+  right: 41rem;
+  width: 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+}
 @media (max-width: 565px) {
   .main {
     text-align: center;
