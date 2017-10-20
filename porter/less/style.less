@@ -1,0 +1,324 @@
+@font-face {
+	font-family: 'Muller_XB';
+	src: url('../fonts/MullerExtraBold.eot');
+	src: url('../fonts/MullerExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MullerExtraBold.woff2') format('woff2'),
+		url('../fonts/MullerExtraBold.woff') format('woff'),
+		url('../fonts/MullerExtraBold.ttf') format('truetype'),
+		url('../fonts/MullerExtraBold.svg#MullerExtraBold') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller_Thin';
+	src: url('../fonts/MullerThin.eot');
+	src: url('../fonts/MullerThin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MullerThin.woff2') format('woff2'),
+		url('../fonts/MullerThin.woff') format('woff'),
+		url('../fonts/MullerThin.ttf') format('truetype'),
+		url('../fonts/MullerThin.svg#MullerThin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller_UL';
+	src: url('../fonts/MullerUltraLight.eot');
+	src: url('../fonts/MullerUltraLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MullerUltraLight.woff2') format('woff2'),
+		url('../fonts/MullerUltraLight.woff') format('woff'),
+		url('../fonts/MullerUltraLight.ttf') format('truetype'),
+		url('../fonts/MullerUltraLight.svg#MullerUltraLight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller_light';
+	src: url('../fonts/MullerLight.eot');
+	src: url('../fonts/MullerLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MullerLight.woff2') format('woff2'),
+		url('../fonts/MullerLight.woff') format('woff'),
+		url('../fonts/MullerLight.ttf') format('truetype'),
+		url('../fonts/MullerLight.svg#MullerLight') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller_bold';
+	src: url('../fonts/MullerBold.eot');
+	src: url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MullerBold.woff2') format('woff2'),
+		url('../fonts/MullerBold.woff') format('woff'),
+		url('../fonts/MullerBold.ttf') format('truetype'),
+		url('../fonts/MullerBold.svg#MullerBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+.bold() {
+	font-family: 'Muller_bold', sans-serif;
+}
+.light() {
+	font-family: 'Muller_light', sans-serif;
+}
+.ulight() {
+	font-family: 'Muller_UL', sans-serif;
+}
+.thin() {
+	font-family: 'Muller_Thin', sans-serif;
+}
+.xbold() {
+	font-family: 'Muller_XB', sans-serif;
+}
+.main {
+	padding: 3rem 0;
+	background-color:  #473c8d;
+	&-logo {
+		margin-top: 2rem;
+		text-align: center;
+	}
+	&-menu {
+		text-align: center;
+		li {
+			display: inline-block;
+			margin-left: 3rem;
+			.light();
+			font-size: 2.5rem;
+			margin-top: 3rem;
+
+		}
+		a:hover {
+			color:  #ffec2d;
+		}
+		a {
+			outline: none;
+			text-decoration: none;
+			color: #fff;
+	}
+}
+&-link {
+	p {
+		display: inline-block;
+		color: #fff;
+		.bold();
+		font-size: 1.8rem;
+		margin-top: 2rem;
+	}
+	img {
+		margin-top: -2.3rem;
+	}
+}
+}
+.main-bg {
+	text-align: center;
+	background-color: #473c8d;
+	&-header {
+		text-transform: uppercase;
+		color: #fff;
+		.xbold();
+		margin: 9rem 0;
+		h1 {
+			font-size: 4rem;
+		}
+		span {
+			color:  #ffec2d;
+		}
+	}
+	&_form {
+		margin-top: 3rem;
+		input {
+			margin-right: 2rem;
+			border: none;
+			border-radius: 2rem;
+			padding: 1rem 0;
+			outline: none;
+			text-align: center;
+			.light();
+			font-size: 1.7rem;
+		}
+		button {
+			border: none;
+			outline: none;
+			padding: 1rem 3.3rem;
+			border-radius: 2rem;
+			.light();
+			font-size: 1.7rem;
+			background-color:  #fe6192;
+			color: #ffffff;
+			transition: 1s;
+		}
+		button:hover {
+			background-color: #000;
+			transition: 1s;
+		}
+	}
+}
+.section-header {
+	text-align: center;
+	.xbold();
+	font-size: 2rem;
+	text-transform: uppercase;
+	color:  #2f2762;
+	p {
+		text-align: center;
+		color:  #473c8d;
+		.light();
+		font-size: 2.5rem;
+		text-transform: none;
+		margin-bottom: 5rem;
+	}
+}
+.features {
+	padding: 10rem 0;
+	&-text {
+		color:  #2f2762;
+		.light();
+		font-size: 2rem;
+		margin-left: 23rem;
+		margin-top: 3rem;
+	}
+}
+.advantages {
+	background-color:  #fafafa;
+	padding: 10rem 0;
+	text-align: center;
+	&-block {
+		p {
+			color:  #2f2762;
+			.light();
+			font-size: 2rem;
+			margin-top: 1rem;
+		}
+	}
+}
+.price {
+	padding: 7rem 0;
+	text-align: center;
+	span {
+		display: block;
+	}
+	&-block {
+		padding: 3rem 0;
+		min-height: 40rem;
+		margin-top: 3rem;
+		border-radius: 1rem;
+		background-color: #a16afb;
+		span {
+			.bold();
+			font-size: 2.2rem;
+			color: #fff;
+			margin-top: 2rem;
+		}
+		p {
+			margin-top: 2rem;
+			.light();
+			font-size: 2rem;
+			color: #fff;
+		}
+		button {
+			border: none;
+			outline: none;
+			padding: 1rem 3.3rem;
+			border-radius: 2rem;
+			.light();
+			font-size: 1.7rem;
+			background-color:  #fe6192;
+			color: #ffffff;
+			transition: 1s;
+		}
+		button:hover {
+			background-color: #000;
+			transition: 1s;
+		}
+	}
+}
+.second {
+	margin-top: 8rem;
+}
+.third {
+	margin-top: 4.6rem;
+}
+footer {
+	padding: 4rem 0;
+	background-color:  #3b3274;
+	button {
+		margin-top: 2rem;
+		border: none;
+		outline: none;
+		padding: 1rem 3.3rem;
+		border-radius: 2rem;
+		.light();
+		font-size: 1.7rem;
+		background-color:  #fe6192;
+		color: #ffffff;
+		transition: 1s;
+	}
+	button:hover {
+		background-color: #000;
+		transition: 1s;
+	}
+}
+@media (max-width: 565px) {
+	.main {
+		text-align: center;
+		h1 {
+			font-size: 2.5rem;
+		}
+		&-menu {
+			ul {
+				padding: 0;
+			}
+		}
+	}
+	.main-bg {
+			img {
+				width: 100%; 
+				height: auto;
+				margin-left: 3rem;
+			}
+			&_form {
+				text-align: center;
+				button {
+					padding: 1rem 1.7rem;
+
+				}
+				input {
+					margin: 0;
+				}
+			}
+	}
+	.features {
+		padding: 5rem 0;
+		h2 {
+			font-size: 2.5rem;
+		}
+		&-text {
+			margin: 1rem;
+			margin-top: 3rem;
+			font-size: 1.7rem;
+		}
+	}
+	.advantages {
+		padding: 5rem 0;
+		text-align: center;
+		h2 {
+			font-size: 2.5rem;
+		}
+		&-block {
+			p {
+				font-size: 1.5rem;
+				margin-bottom: 4rem;
+			}
+		}
+	}
+	.section-header {
+		p {
+			font-size: 2rem;
+		}
+	}
+	footer {
+		text-align: center;
+	}
+}
