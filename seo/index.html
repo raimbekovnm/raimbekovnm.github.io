@@ -33,9 +33,10 @@
     <section class="main">
     	<div class="container">
     		<div class="row menu">
-    			<div class="col-md-7 col-md-offset-2 main-menu">
-    				<nav>
-    					<ul>
+    			<div class="col-md-7 col-md-offset-2 col-xs-12 main-menu">
+    				<nav class="nav">
+						<div class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32; fill: #ffffff" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></div>
+    					<ul class="menu-first">
     						<li><a href="#">Главная</a></li>
     						<li><a href="#">Услуги</a></li>
     						<li><a href="#">Наши работы</a></li>
@@ -211,8 +212,24 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('.menu-icon').on('click', function(event) {
+        $('.menu-first').toggle("active");
+        /* Act on the event */
+      });
+      $('.menu-icon').on('click', function(event) {
+        event.preventDefault();
+        $('.mnu').fadeOut();
+        /* Act on the event */
+      });
+      });
+    
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    
   </body>
 </html>

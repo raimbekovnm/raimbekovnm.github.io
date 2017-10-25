@@ -1,6 +1,6 @@
-/* body {
+ body {
 	overflow-x: hidden;
-} */
+} 
 
 @font-face {
 	font-family: 'Stem_light';
@@ -330,12 +330,21 @@ footer {
 		transition: 0.5s;
 	}
 }
+.menu-icon {
+	display: none;
+}
+.menu-first {
+	display: block;
+}
 @media (max-width: 565px) {
+	.menu-icon {
+		text-align: left;
+		margin-top: 1rem;
+	}
 	.main {
-		ul {
-			padding: 0;
-			margin-right: 2rem;
-		}
+
+	
+
 		&-bg {
 			h1 {
 				font-size: 2.7rem;
@@ -372,5 +381,19 @@ footer {
 			padding: 0;
 			margin-right: 2rem;
 		}
+		
 	}
-}
+	.menu ul {
+		display: block;
+			display: none;
+			padding: 0;
+			margin-right: 2rem;
+			li {
+				display: block;
+				text-align: left;
+			}
+		}
+		.menu-icon {
+			display: block;
+		}
+	}
