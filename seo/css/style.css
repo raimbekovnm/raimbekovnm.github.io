@@ -1,0 +1,327 @@
+/* body {
+	overflow-x: hidden;
+} */
+@font-face {
+  font-family: 'Stem_light';
+  src: url('../fonts/Stem-Light.eot');
+  src: url('../fonts/Stem-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Stem-Light.woff2') format('woff2'), url('../fonts/Stem-Light.woff') format('woff'), url('../fonts/Stem-Light.ttf') format('truetype'), url('../fonts/Stem-Light.svg#Stem-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stem_med';
+  src: url('../fonts/Stem-Medium.eot');
+  src: url('../fonts/Stem-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Stem-Medium.woff2') format('woff2'), url('../fonts/Stem-Medium.woff') format('woff'), url('../fonts/Stem-Medium.ttf') format('truetype'), url('../fonts/Stem-Medium.svg#Stem-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stem_reg';
+  src: url('../fonts/Stem-Regular.eot');
+  src: url('../fonts/Stem-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Stem-Regular.woff2') format('woff2'), url('../fonts/Stem-Regular.woff') format('woff'), url('../fonts/Stem-Regular.ttf') format('truetype'), url('../fonts/Stem-Regular.svg#Stem-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stem_bold';
+  src: url('../fonts/Stem-Bold.eot');
+  src: url('../fonts/Stem-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Stem-Bold.woff2') format('woff2'), url('../fonts/Stem-Bold.woff') format('woff'), url('../fonts/Stem-Bold.ttf') format('truetype'), url('../fonts/Stem-Bold.svg#Stem-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stem_thin';
+  src: url('../fonts/Stem-Thin.eot');
+  src: url('../fonts/Stem-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Stem-Thin.woff2') format('woff2'), url('../fonts/Stem-Thin.woff') format('woff'), url('../fonts/Stem-Thin.ttf') format('truetype'), url('../fonts/Stem-Thin.svg#Stem-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+.main {
+  background: url(../img/bg.png) center center no-repeat;
+  text-align: center;
+}
+.main-menu li {
+  display: inline-block;
+  margin-left: 3rem;
+  font-family: 'Stem_thin';
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+.main-menu a {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+}
+.main-link {
+  display: inline-block;
+  margin-top: 3rem;
+  font-family: 'Stem_light';
+  font-size: 2.5rem;
+  color: #fff;
+}
+.main-bg h1 {
+  margin-top: 15rem;
+  font-family: 'Stem_med';
+  font-size: 4rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.main-bg p {
+  margin-top: 2rem;
+  font-family: 'Stem_light';
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.main-bg button {
+  margin-top: 5rem;
+  border-radius: 10px;
+  background-color: #0d8ffd;
+  font-family: 'Stem_light';
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.main-bg button:hover {
+  background-color: #fff;
+  color: #0d8ffd;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 7px 47.94px 3.06px rgba(2, 63, 114, 0.4);
+          box-shadow: 0px 7px 47.94px 3.06px rgba(2, 63, 114, 0.4);
+}
+.main-bg img {
+  padding-top: 20rem;
+  padding-bottom: 3rem;
+  display: block;
+  margin: 0 auto;
+}
+.section-header {
+  text-align: center;
+}
+.section-header h2 {
+  font-family: 'Stem_reg';
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.section-header p {
+  font-family: 'Stem_reg';
+  font-size: 2rem;
+}
+.site {
+  background: url(../img/google.png) center center no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
+  text-align: center;
+}
+.site p {
+  font-family: 'Stem_light';
+  font-size: 2.7rem;
+  color: #20252b;
+  margin-top: 2rem;
+}
+.site img {
+  margin-top: 5rem;
+}
+.seo {
+  background: url(../img/seo-bg.png) center center no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
+  text-align: center;
+}
+.seo-p {
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+.seo span {
+  margin-top: 2rem;
+  display: block;
+  font-family: 'Stem_light';
+  font-size: 2.4rem;
+}
+.seo-block {
+  margin-top: 5rem;
+}
+.seo-block p {
+  font-family: 'Stem_light';
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 3rem;
+  margin-left: 2rem;
+}
+.comm {
+  padding: 10rem 0;
+  background-color: #2c2c2c;
+}
+.comm h2 {
+  color: #fff;
+}
+.comm-form {
+  margin-top: 10rem;
+  text-align: center;
+}
+.comm-form input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: transparent;
+  color: rgba(196, 196, 196, 0.5);
+  font-family: 'Stem_light';
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+  min-width: 30rem;
+  padding-bottom: 0.5rem;
+  background-image: url(../img/Arrow.png);
+  background-repeat: no-repeat;
+  background-position: 27rem;
+  outline: none;
+}
+.comm-form button {
+  border-radius: 4px;
+  background-color: #c24d36;
+  border: none;
+  margin-top: 3rem;
+  min-width: 30rem;
+  padding: 1rem 0;
+  font-family: 'Stem_light';
+  color: #fff;
+  font-size: 2rem;
+}
+.terms {
+  background-color: #fcfcfc;
+  padding: 10rem 0;
+}
+.terms-img {
+  margin-left: 25rem;
+}
+.terms h2 {
+  font-family: 'Stem_reg';
+  font-size: 3rem;
+}
+.terms p {
+  margin-top: 10rem;
+  font-family: 'Stem_light';
+  font-size: 1.5rem;
+}
+.terms button {
+  display: block;
+  margin-top: 3rem;
+  border-radius: 10px;
+  background-color: #0d8ffd;
+  font-family: 'Stem_light';
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.terms button:hover {
+  -webkit-box-shadow: 0px 7px 47.94px 3.06px rgba(2, 63, 114, 0.4);
+          box-shadow: 0px 7px 47.94px 3.06px rgba(2, 63, 114, 0.4);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.img-term {
+  margin-top: 10rem;
+}
+.info {
+  background-color: #545462;
+  padding: 7rem 0;
+}
+.info h2 {
+  color: #fff;
+  margin-bottom: 5rem;
+}
+.info-img {
+  text-align: right;
+}
+.info .fa {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 0.7rem;
+}
+.info button {
+  display: block;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+.info a {
+  font-family: 'Stem_reg';
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.info p {
+  font-family: 'Stem_thin';
+  font-size: 2rem;
+  color: #fff;
+}
+footer {
+  padding: 4rem 0;
+  background-color: #000;
+}
+footer button {
+  display: block;
+  border-radius: 10px;
+  background-color: #0d8ffd;
+  font-family: 'Stem_light';
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer button:hover {
+  -webkit-box-shadow: 0px 7px 47.94px 3.06px rgba(2, 63, 114, 0.4);
+          box-shadow: 0px 7px 47.94px 3.06px rgba(2, 63, 114, 0.4);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media (max-width: 565px) {
+  .main ul {
+    padding: 0;
+    margin-right: 2rem;
+  }
+  .main-bg h1 {
+    font-size: 2.7rem;
+  }
+  .main-bg p {
+    font-size: 2rem;
+  }
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+  .site p {
+    font-size: 2rem;
+  }
+  .img-term {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  .info p {
+    margin-top: 2rem;
+  }
+  footer {
+    text-align: center;
+  }
+  footer ul {
+    padding: 0;
+    margin-right: 2rem;
+  }
+}
