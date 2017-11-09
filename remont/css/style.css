@@ -1,5 +1,7 @@
 body {
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @font-face {
   font-family: 'Stem_light';
@@ -338,85 +340,301 @@ footer p {
 .menu-icon {
   display: none;
 }
+.navbar {
+  /* 	position: fixed; */
+  z-index: 1;
+}
+.wrapper {
+  display: none;
+}
 @media (max-width: 565px) {
-  .main-menu ul {
-    display: none;
-  }
-  .main-menu ul li {
+  .wrapper {
     display: block;
-  }
-  .main-link {
-    display: none;
   }
   .main {
-    background-position: center left 0rem;
+    display: none;
   }
-  .main-bg {
-    text-align: center;
-  }
-  .main-bg h1 {
-    font-size: 3rem;
-  }
-  .main-bg button {
-    padding: 1rem 5.3rem;
-    margin: 0 auto;
-  }
-  .main-bg input {
-    margin-bottom: 1rem;
-  }
-  .logo {
-    text-align: center;
-  }
-  .about img {
-    width: 100%;
-  }
-  .about p {
-    margin-top: 5rem;
-  }
-  .text {
-    position: absolute;
-    padding: 1rem;
-  }
-  .text-img {
-    margin-top: 1rem;
+  .about {
+    display: none;
   }
   .advantages {
-    padding-bottom: 5rem;
+    display: none;
   }
-  .sale-block form {
-    text-align: center;
+  .sale {
+    display: none;
   }
-  .sale-block form button {
-    padding: 1rem 5.2rem;
-    margin: 0 auto;
-  }
-  .sale-block form input {
-    margin-bottom: 1rem;
+  .price {
+    display: none;
   }
   .call {
+    display: none;
+  }
+  .partners {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  /* 	.main-menu {
+ 	ul {
+ 		display: none;
+ 
+ 		li {
+ 			display: block;
+ 		}
+ 	}
+ }
+ .main-link {
+ 	display: none;
+ }
+ .main {
+ 	background-position: center left 0rem;
+ 	&-bg {
+ 		text-align: center;
+ 		h1 {
+ 			font-size: 3rem;
+ 		}
+ 		button {
+ 			padding: 1rem 5.3rem;
+ 			margin: 0 auto;
+ 		}
+ 		input {
+ 			margin-bottom: 1rem;
+ 		}
+ 
+ 	}
+ }
+ .logo {
+ 	text-align: center;
+ }
+ .about {
+ 	img {
+ 		width: 100%;
+ 	}
+ 	p {
+ 		margin-top: 5rem;
+ 	}
+ }
+  .text {
+ position: absolute;
+ padding: 1rem;
+ &-img {
+ 	margin-top: 1rem;
+ }
+  }
+  .advantages {
+ padding-bottom: 5rem;
+ 
+  }
+  .sale {
+ &-block {
+ 	form {
+ 		text-align: center;
+ 		button {
+ 			padding: 1rem 5.2rem;
+ 			margin: 0 auto;
+ 		}
+ 		input {
+ 			margin-bottom: 1rem;
+ 		}
+ 	}
+ }
+  }
+ 	.call {
+ 		text-align: center;
+ 		button {
+ 			margin: 0 auto;
+ 			padding: 1rem 5rem;
+ 			display: block;
+ 			margin-top: 1rem;
+ 		}
+ 	}
+ 	.partners {
+ 		img {
+ 			width: 100%;
+ 		}
+ 	}
+ 	footer {
+ 		input {
+ 			margin-top: 3rem;
+ 		}
+ 		button {
+ 			padding: 1rem 5rem;
+ 			display: block;
+ 			margin: 0 auto;
+ 			margin-top: 1rem;
+ 			margin-bottom: 3rem;
+ 		}
+ 	}
+ 		.menu-icon {
+ 		margin-top: -5rem;
+ 		display: block;
+ 	} */
+  .response-main {
+    background: url(../img/response/ремонт-стиральных-машин-Бишкек.png) center no-repeat;
+    background-size: cover;
     text-align: center;
   }
-  .call button {
-    margin: 0 auto;
-    padding: 1rem 5rem;
+  .response-main h1 {
+    margin-top: 10rem;
+    color: #fff;
+    font-family: 'Stem_reg';
+    font-size: 4rem;
+  }
+  .response-main span {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
     display: block;
+    color: #fff;
+    font-family: 'Stem_reg';
+    font-size: 3rem;
+  }
+  .response-main p {
     margin-top: 1rem;
+    color: #fff;
+    font-family: 'Stem_reg';
+    font-size: 2rem;
   }
-  .partners img {
-    width: 100%;
+  .response-main strong {
+    color: #f05858;
   }
-  footer input {
-    margin-top: 3rem;
+  .first-button {
+    margin-top: 8rem;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    display: inline-block;
+    background-color: #ff8a00;
   }
-  footer button {
-    padding: 1rem 5rem;
+  .first-button button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Stem_reg';
+    font-size: 1.9rem;
+  }
+  .second-button {
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    background-color: #23a716;
+  }
+  .second-button button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Stem_reg';
+    font-size: 1.9rem;
+  }
+  .section-header_blue {
+    background-color: #00aeef;
+    text-align: center;
+    padding: 1.7rem;
+  }
+  .section-header_blue p {
+    font-family: 'Stem_reg';
+    font-size: 3rem;
+    color: #fff;
+  }
+  .about-response {
+    background-color: #dbe6ed;
+  }
+  .about-response_block {
+    background-color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about-response_block p {
+    font-family: 'Stem_reg';
+    font-size: 1.8rem;
+    padding: 1rem;
+    padding-top: 0;
+  }
+  .about-response_block span {
+    font-family: 'Stem_med';
+  }
+  .features-response {
+    background-color: #dbe6ed;
+    text-align: center;
+  }
+  .features-response_block {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+  }
+  .features-response span {
+    margin-top: 2rem;
+    display: block;
+    color: #3c7ac9;
+    font-family: 'Stem_med';
+    font-size: 2rem;
+  }
+  .features-response p {
+    margin-top: 2rem;
+    color: #1b1919;
+    font-family: 'Stem_reg';
+    font-size: 2rem;
+  }
+  .features-form {
+    text-align: center;
+    background-color: #0172ff;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    margin-bottom: 2rem;
+  }
+  .features-form strong {
+    font-family: 'Stem_reg';
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .features-form button {
     display: block;
     margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    text-align: center;
+    font-family: 'Stem_reg';
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 1rem;
+    min-width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: -webkit-gradient(linear, left top, right top, from(#fcfbff), color-stop(0%, #fd3d3e), to(#fe990b));
+    background: linear-gradient(90deg, #fcfbff 0%, #fd3d3e 0%, #fe990b 100%);
   }
-  .menu-icon {
-    margin-top: -5rem;
-    display: block;
+  .features-form input {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    padding: 1rem;
+    min-width: 90%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-family: 'Stem_reg';
+    color: #fff;
+  }
+  .features-form input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  .price-response {
+    background-color: #dbe6ed;
+  }
+  .price-response h2 {
+    color: #fff;
+    font-family: 'Stem_reg';
+    font-size: 2.5rem;
+  }
+  .red-text {
+    margin-top: 1rem;
+    border-bottom: 1px solid grey;
+  }
+  .red-text p {
+    font-family: 'Stem_reg';
+    font-size: 1.7rem;
   }
 }

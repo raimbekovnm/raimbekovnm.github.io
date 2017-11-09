@@ -1,5 +1,6 @@
 body {
 	overflow-x: hidden;
+	box-sizing: border-box;
 }
 @font-face {
 	font-family: 'Stem_light';
@@ -394,100 +395,306 @@ footer {
 .menu-icon {
 	display: none;
 }
+.navbar {
+/* 	position: fixed; */
+	z-index: 1;
+}
+.wrapper {
+	display: none;
+}
  @media (max-width: 565px) {
- 	.main-menu {
- 		ul {
- 			display: none;
-
- 			li {
- 				display: block;
- 			}
- 		}
- 	}
- 	.main-link {
- 		display: none;
+ 	.wrapper {
+ 		display: block; 
  	}
  	.main {
- 		background-position: center left 0rem;
- 		&-bg {
- 			text-align: center;
- 			h1 {
- 				font-size: 3rem;
- 			}
- 			button {
- 				padding: 1rem 5.3rem;
- 				margin: 0 auto;
- 			}
- 			input {
- 				margin-bottom: 1rem;
- 			}
-
- 		}
- 	}
- 	.logo {
- 		text-align: center;
+ 		display: none;
  	}
  	.about {
+ 		display: none;
+ 	}
+ 	.advantages {
+ 		display: none;
+ 	}
+ 	.sale {
+ 		display: none;
+ 	}
+ 	.price {
+ 		display: none;
+ 	}
+ 	.call {
+ 		display: none;
+ 	}
+ 	.partners {
+ 		display: none;
+ 	}
+ 	footer {
+ 		display: none;
+ 	}
+ /* 	.main-menu {
+ 	ul {
+ 		display: none;
+ 
+ 		li {
+ 			display: block;
+ 		}
+ 	}
+ }
+ .main-link {
+ 	display: none;
+ }
+ .main {
+ 	background-position: center left 0rem;
+ 	&-bg {
+ 		text-align: center;
+ 		h1 {
+ 			font-size: 3rem;
+ 		}
+ 		button {
+ 			padding: 1rem 5.3rem;
+ 			margin: 0 auto;
+ 		}
+ 		input {
+ 			margin-bottom: 1rem;
+ 		}
+ 
+ 	}
+ }
+ .logo {
+ 	text-align: center;
+ }
+ .about {
+ 	img {
+ 		width: 100%;
+ 	}
+ 	p {
+ 		margin-top: 5rem;
+ 	}
+ }
+  .text {
+ position: absolute;
+ padding: 1rem;
+ &-img {
+ 	margin-top: 1rem;
+ }
+  }
+  .advantages {
+ padding-bottom: 5rem;
+ 
+  }
+  .sale {
+ &-block {
+ 	form {
+ 		text-align: center;
+ 		button {
+ 			padding: 1rem 5.2rem;
+ 			margin: 0 auto;
+ 		}
+ 		input {
+ 			margin-bottom: 1rem;
+ 		}
+ 	}
+ }
+  }
+ 	.call {
+ 		text-align: center;
+ 		button {
+ 			margin: 0 auto;
+ 			padding: 1rem 5rem;
+ 			display: block;
+ 			margin-top: 1rem;
+ 		}
+ 	}
+ 	.partners {
  		img {
  			width: 100%;
  		}
+ 	}
+ 	footer {
+ 		input {
+ 			margin-top: 3rem;
+ 		}
+ 		button {
+ 			padding: 1rem 5rem;
+ 			display: block;
+ 			margin: 0 auto;
+ 			margin-top: 1rem;
+ 			margin-bottom: 3rem;
+ 		}
+ 	}
+ 		.menu-icon {
+ 		margin-top: -5rem;
+ 		display: block;
+ 	} */
+ 	.response-main {
+ 		background: url(../img/response/ремонт-стиральных-машин-Бишкек.png) center no-repeat;
+ 		background-size: cover;
+ 		text-align: center;
+ 		h1 {
+ 			margin-top: 10rem;
+ 			color: #fff;
+ 			.reg();
+ 			font-size: 4rem;
+ 		}
+ 		span {
+ 			margin-top: 10rem;
+ 			margin-bottom: 1rem;
+ 			display: block;
+ 			color: #fff;
+ 			.reg();
+ 			font-size: 3rem;
+ 		}	
  		p {
- 			margin-top: 5rem;
+ 			margin-top: 1rem;
+ 			color: #fff;
+ 			.reg();
+ 			font-size: 2rem;
+ 		}
+ 		strong {
+ 			color: #f05858;
  		}
  	}
- .text {
- 	position: absolute;
- 	padding: 1rem;
- 	&-img {
- 		margin-top: 1rem;
+ 	.first-button {
+ 		margin-top: 8rem;
+ 		border-radius: 0.5rem;
+ 		padding: 1rem 1rem;
+ 		display: inline-block;
+ 		background-color: #ff8a00;
+ 		button {
+ 			outline: none;
+ 			border: none;
+ 			background-color: transparent;
+ 			color: #fff;
+ 			.reg();
+ 			font-size: 1.9rem;
+ 		}
  	}
- }
- .advantages {
- 	padding-bottom: 5rem;
-
- }
- .sale {
- 	&-block {
- 		form {
+ 	.second-button {
+ 		border-radius: 0.5rem;
+ 		padding: 1rem 2rem;
+ 		display: inline-block;
+ 		background-color: #23a716;
+ 		button {
+ 			outline: none;
+ 			border: none;
+ 			background-color: transparent;
+ 			color: #fff;
+ 			.reg();
+ 			font-size: 1.9rem;
+ 		}
+ 	}
+ 	.section-header_blue {
+ 		background-color: #00aeef;
+ 		text-align: center;
+ 		padding: 1.7rem;
+ 		p {
+ 			.reg();
+ 			font-size: 3rem;
+ 			color: #fff;
+ 		}
+ 	}
+ 	.about-response {
+ 		background-color: #dbe6ed;
+ 		&_block {
+ 			background-color: #fff;
+ 			margin-top: 2rem;
+ 			margin-bottom: 2rem;
+ 			p {
+ 				.reg();
+ 				font-size: 1.8rem;
+ 				padding: 1rem;
+ 				padding-top: 0;
+ 			}
+ 			span {
+ 				.med();
+ 			}
+ 		}
+ 	}
+ 	.features-response {
+ 		background-color: #dbe6ed;
+ 		text-align: center;
+ 		&_block {
+ 			margin-top: 2rem;
+ 			margin-bottom: 2rem;
+ 			padding: 2rem;
+ 			background-color: #fff;
+ 		}
+ 		span {
+ 			margin-top: 2rem;
+ 			display: block;
+ 			color: #3c7ac9;
+ 			.med();
+ 			font-size: 2rem;
+ 		}
+ 		p {
+ 			margin-top: 2rem;
+ 			color: #1b1919;
+ 			.reg();
+ 			font-size: 2rem;
+ 		}
+ 	}
+ 	.features-form {
+ 		text-align: center;
+ 		background-color: #0172ff;
+ 		padding-top: 3rem;
+ 		padding-bottom: 5rem;
+ 		margin-bottom: 2rem;
+ 		strong {
+ 			.reg();
+ 			font-size: 1.7rem;
+ 			color: #fff;
+ 			font-weight: 600;
+ 			text-transform: uppercase;
+ 		}
+ 		button {
+ 			display: block;
+ 			margin: 0 auto;
  			text-align: center;
- 			button {
- 				padding: 1rem 5.2rem;
- 				margin: 0 auto;
- 			}
- 			input {
- 				margin-bottom: 1rem;
- 			}
+ 			.reg();
+ 			color: #fff;
+ 			font-size: 1.7rem;
+ 			padding: 1rem;
+ 			min-width: 90%;
+ 			outline: none;
+ 			border: none;
+ 			border-radius: 4px;
+ 			background: -webkit-linear-gradient(0deg, #fcfbff 0%, #fd3d3e 0%, #fe990b 100%);
+ 			background: -moz-linear-gradient(0deg, #fcfbff 0%, #fd3d3e 0%, #fe990b 100%);
+ 			background: -o-linear-gradient(0deg, #fcfbff 0%, #fd3d3e 0%, #fe990b 100%);
+ 			background: -ms-linear-gradient(0deg, #fcfbff 0%, #fd3d3e 0%, #fe990b 100%);
+ 			background: linear-gradient(90deg, #fcfbff 0%, #fd3d3e 0%, #fe990b 100%);
+
+ 		}
+ 		input {
+ 			margin-bottom: 2rem;
+ 			margin-top: 4rem;
+ 			text-align: center;
+ 			padding: 1rem;
+ 			min-width: 90%;
+ 			background-color: transparent;
+ 			border: 1px solid #fff;
+ 			border-radius: 5px;
+ 			.reg();
+ 			color: #fff;
+ 		}
+ 		input::-webkit-input-placeholder {
+ 		 	color: #fff; 
  		}
  	}
- }
-	.call {
-		text-align: center;
-		button {
-			margin: 0 auto;
-			padding: 1rem 5rem;
-			display: block;
-			margin-top: 1rem;
-		}
-	}
-	.partners {
-		img {
-			width: 100%;
-		}
-	}
-	footer {
-		input {
-			margin-top: 3rem;
-		}
-		button {
-			padding: 1rem 5rem;
-			display: block;
-			margin: 0 auto;
-			margin-top: 1rem;
-			margin-bottom: 3rem;
-		}
-	}
-		.menu-icon {
-		margin-top: -5rem;
-		display: block;
-	}
+
+ 	.price-response {
+ 		background-color: #dbe6ed;
+ 		h2 {
+ 			color: #fff;
+ 			.reg();
+ 			font-size: 2.5rem;
+ 		}
+ 	}
+ 	.red-text {
+ 		margin-top: 1rem;
+ 		border-bottom: 1px solid grey;
+ 		p {
+ 			.reg();
+ 			font-size: 1.7rem;
+ 		}
+ 	}
  }
